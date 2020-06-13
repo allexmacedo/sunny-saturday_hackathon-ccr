@@ -26,28 +26,10 @@ protocol LocationDataStore: AnyObject {
      */
     func requestLocationAuthorization() throws
     
-    /// Retrive the location of a specific city
-    /// - Parameters:
-    ///   - cityName: The city used to request the location
-    ///   - completion: Clousure that returns the city location or error if it occurs
-    func retriveCityLocation(cityName: String, completion: @escaping (_ cityLocation: CLLocation?, _ error: Error?) -> Void)
 }
 
 extension LocationDAO: LocationDataStore {
     
-    func retriveCityLocation(cityName: String, completion: @escaping (CLLocation?, Error?) -> Void) {
-        
-        let geoCoder = CLGeocoder()
-        
-        geoCoder.geocodeAddressString(cityName) { (placemarks, error) in
-            if error == nil, let placemarks = placemarks, let location = placemarks.first?.location {
-                completion(location, nil)
-                
-            } else {
-                completion(nil, LocationError.reverseGeocodingError)
-            }
-        }
-    }
     
     func retriveCurrentUserLocation() throws -> CLLocation {
         

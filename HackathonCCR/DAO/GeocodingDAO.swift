@@ -14,6 +14,12 @@ protocol GeocodingDataStore {
     /// Reads the current city of the user
     /// - Parameter completion: Clousure that returns the city name or error if it occurs
     func retriveLocationName(from location: CLLocation, completion: @escaping (Result<Location, Error>) -> Void)
+    
+    /// Retrive the location of a specific city
+    /// - Parameters:
+    ///   - cityName: The city used to request the location
+    ///   - completion: Clousure that returns the city location or error if it occurs
+    func retriveCityLocation(cityName: String, completion: @escaping (Result<CLLocation, Error>) -> Void)
 }
 
 final class GeocodingDAO: GeocodingDataStore {
@@ -34,6 +40,25 @@ final class GeocodingDAO: GeocodingDataStore {
                 
                 let location = Location(city: cityName, state: stateName, country: countryName)
                 
+                completion(.success(location))
+                
+            } else {
+                completion(.failure(LocationError.reverseGeocodingError))
+            }
+        }
+    }
+    
+    /// Retrive the location of a specific city
+    /// - Parameters:
+    ///   - cityName: The city used to request the location
+    ///   - completion: Clousure that returns the city location or error if it occurs
+    func retriveCityLocation(cityName: String, completion: @escaping (Result<CLLocation, Error>) -> Void) {
+        
+        let geoCoder = CLGeocoder()
+        
+        geoCoder.geocodeAddressString(cityName) { (placemarks, error) in
+            
+            if error == nil, let placemarks = placemarks, let location = placemarks.first?.location {
                 completion(.success(location))
                 
             } else {

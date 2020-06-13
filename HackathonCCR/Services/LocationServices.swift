@@ -14,11 +14,11 @@ protocol LocationBusinessLogic: AnyObject {
     
     /// Reads the current location of the user
     /// - Parameter completion: Clousure that returns the user location or error if it occurs
-    func retriveUserLocation(completion: @escaping (_ userLocation: CLLocation?, _ error: Error?) -> Void)
+    func retriveUserLocation(completion: @escaping (Result<CLLocation, Error>) -> Void)
     
     /// Requests authorization to acess user location
     /// - Parameter completion: Clousure that an error if it occurs
-    func requestAuthorization(completion: ((_ error: Error?) -> Void)?)
+    func requestAuthorization(completion: ((Result<Void, Error>) -> Void)?)
     
     /// Reads the current city of the user
     /// - Parameter completion: Clousure that returns the city name or error if it occurs
@@ -28,7 +28,7 @@ protocol LocationBusinessLogic: AnyObject {
     /// - Parameters:
     ///   - cityName: The city used to request the location
     ///   - completion: Clousure that returns the city location or error if it occurs
-    func retriveCityLocation(cityName: String, completion: @escaping (_ cityLocation: CLLocation?, _ error: Error?) -> Void)
+    func retriveCityLocation(cityName: String, completion: @escaping (Result<CLLocation, Error>) -> Void)
     
     /// Add an object as an observer to observe any changes on Location authorizations
     /// - Parameters:
@@ -47,12 +47,15 @@ final class LocationServices: LocationBusinessLogic {
         
         let blockForExecutionInMain = BlockOperation {
             
-            self.retriveUserLocation { (location, error) in
-                if error == nil, let location = location {
-                    self.geocoderDataStore.retriveLocationName(from: location, completion: completion)
+            self.retriveUserLocation { result in
+               
+                switch result {
                     
-                } else {
-                    completion(.failure(error!))
+                    case .success(let location):
+                        self.geocoderDataStore.retriveLocationName(from: location, completion: completion)
+                    
+                    case .failure(let error):
+                        completion(.failure(error))
                 }
             }
         }
@@ -60,15 +63,15 @@ final class LocationServices: LocationBusinessLogic {
         QueueManager.sharedInstance.executeBlock(blockForExecutionInMain, queueType: .main)
     }
     
-    func retriveCityLocation(cityName: String, completion: @escaping (CLLocation?, Error?) -> Void) {
+    func retriveCityLocation(cityName: String, completion: @escaping (Result<CLLocation, Error>) -> Void) {
         let blockForExecutionInMain = BlockOperation {
-            self.locationDataStore.retriveCityLocation(cityName: cityName, completion: completion)
+            self.geocoderDataStore.retriveCityLocation(cityName: cityName, completion: completion)
         }
         
         QueueManager.sharedInstance.executeBlock(blockForExecutionInMain, queueType: .main)
     }
     
-    func retriveUserLocation(completion: @escaping (CLLocation?, Error?) -> Void) {
+    func retriveUserLocation(completion: @escaping (Result<CLLocation, Error>) -> Void) {
         
         let blockForExecutionInMain = BlockOperation {
             
@@ -76,32 +79,28 @@ final class LocationServices: LocationBusinessLogic {
                 
                 let location = try self.locationDataStore.retriveCurrentUserLocation()
                 
-                completion(location, nil)
+                completion(.success(location))
                 
             } catch {
-                completion(nil, error)
+                completion(.failure(error))
             }
         }
         
         QueueManager.sharedInstance.executeBlock(blockForExecutionInMain, queueType: .main)
     }
     
-    func requestAuthorization(completion: ((Error?) -> Void)?) {
+    func requestAuthorization(completion: ((Result<Void, Error>) -> Void)?) {
         
         let blockForExecutionInMain = BlockOperation {
-            
-            var raisedError: Error?
-            
+                        
             do {
                 
                 try self.locationDataStore.requestLocationAuthorization()
                 
+                completion?(.success(Void()))
+                
             } catch {
-                raisedError = error
-            }
-            
-            if let completion = completion {
-                completion(raisedError)
+                completion?(.failure(error))
             }
         }
         
