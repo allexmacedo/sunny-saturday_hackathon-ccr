@@ -29,6 +29,18 @@
 		2A0ED2D62495435E0042ACE8 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2D52495435E0042ACE8 /* QRCodeView.swift */; };
 		2A0ED2D72495435E0042ACE8 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2D52495435E0042ACE8 /* QRCodeView.swift */; };
 		2A0ED2D82495435E0042ACE8 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2D52495435E0042ACE8 /* QRCodeView.swift */; };
+		2A0ED2DD24956B520042ACE8 /* Services.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0ED2DC24956B520042ACE8 /* Services.storyboard */; };
+		2A0ED2DE24956B520042ACE8 /* Services.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0ED2DC24956B520042ACE8 /* Services.storyboard */; };
+		2A0ED2DF24956B520042ACE8 /* Services.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0ED2DC24956B520042ACE8 /* Services.storyboard */; };
+		2A0ED2E124956B5B0042ACE8 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0ED2E024956B5B0042ACE8 /* Map.storyboard */; };
+		2A0ED2E224956B5B0042ACE8 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0ED2E024956B5B0042ACE8 /* Map.storyboard */; };
+		2A0ED2E324956B5B0042ACE8 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0ED2E024956B5B0042ACE8 /* Map.storyboard */; };
+		2A0ED2E524956B650042ACE8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0ED2E424956B650042ACE8 /* Profile.storyboard */; };
+		2A0ED2E624956B650042ACE8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0ED2E424956B650042ACE8 /* Profile.storyboard */; };
+		2A0ED2E724956B650042ACE8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0ED2E424956B650042ACE8 /* Profile.storyboard */; };
+		2A0ED2EA249574030042ACE8 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0ED2E9249574030042ACE8 /* Wallet.storyboard */; };
+		2A0ED2EB249574030042ACE8 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0ED2E9249574030042ACE8 /* Wallet.storyboard */; };
+		2A0ED2EC249574030042ACE8 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0ED2E9249574030042ACE8 /* Wallet.storyboard */; };
 		2AABCF8924945FAB0087A823 /* NetworkDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */; };
 		2AABCF8A24945FAB0087A823 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */; };
 		2AABCF8B24945FAB0087A823 /* RequestEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */; };
@@ -62,7 +74,6 @@
 		2AABCFDD249486F90087A823 /* CommercialFacilityAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCFDA249486F90087A823 /* CommercialFacilityAnnotation.swift */; };
 		2AF79F072494590900DFBD6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF79F062494590900DFBD6A /* AppDelegate.swift */; };
 		2AF79F092494590900DFBD6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF79F082494590900DFBD6A /* SceneDelegate.swift */; };
-		2AF79F0B2494590900DFBD6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF79F0A2494590900DFBD6A /* ViewController.swift */; };
 		2AF79F0E2494590900DFBD6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF79F0C2494590900DFBD6A /* Main.storyboard */; };
 		2AF79F132494590C00DFBD6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF79F112494590C00DFBD6A /* LaunchScreen.storyboard */; };
 		2AF79F3D24945BBF00DFBD6A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF79F3C24945BBF00DFBD6A /* Colors.xcassets */; };
@@ -110,6 +121,10 @@
 		2A0ED2CB24951C2A0042ACE8 /* MKMapView+drawRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+drawRoute.swift"; sourceTree = "<group>"; };
 		2A0ED2D024952D420042ACE8 /* DateComponentsFormatter+AppFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateComponentsFormatter+AppFormatter.swift"; sourceTree = "<group>"; };
 		2A0ED2D52495435E0042ACE8 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		2A0ED2DC24956B520042ACE8 /* Services.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Services.storyboard; sourceTree = "<group>"; };
+		2A0ED2E024956B5B0042ACE8 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		2A0ED2E424956B650042ACE8 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		2A0ED2E9249574030042ACE8 /* Wallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
 		2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDAO.swift; sourceTree = "<group>"; };
 		2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEncodable.swift; sourceTree = "<group>"; };
@@ -136,7 +151,6 @@
 		2AF79F032494590900DFBD6A /* HackathonCCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonCCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF79F062494590900DFBD6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AF79F082494590900DFBD6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2AF79F0A2494590900DFBD6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2AF79F0D2494590900DFBD6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2AF79F122494590C00DFBD6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AF79F142494590C00DFBD6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -238,6 +252,38 @@
 				2A0ED2D52495435E0042ACE8 /* QRCodeView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2A0ED2D924956B100042ACE8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2A0ED2DC24956B520042ACE8 /* Services.storyboard */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2A0ED2DA24956B290042ACE8 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				2A0ED2E024956B5B0042ACE8 /* Map.storyboard */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		2A0ED2DB24956B360042ACE8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2A0ED2E424956B650042ACE8 /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2A0ED2E8249573F10042ACE8 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				2A0ED2E9249574030042ACE8 /* Wallet.storyboard */,
+			);
+			path = Wallet;
 			sourceTree = "<group>";
 		};
 		2AABCF7824945FAB0087A823 /* Network */ = {
@@ -477,6 +523,10 @@
 				2AABCFD9249486BE0087A823 /* ViewModel */,
 				2AF79F112494590C00DFBD6A /* LaunchScreen.storyboard */,
 				2AF79F3B24945BAD00DFBD6A /* Main */,
+				2A0ED2D924956B100042ACE8 /* Services */,
+				2A0ED2DA24956B290042ACE8 /* Map */,
+				2A0ED2E8249573F10042ACE8 /* Wallet */,
+				2A0ED2DB24956B360042ACE8 /* Profile */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -494,7 +544,6 @@
 			isa = PBXGroup;
 			children = (
 				2AF79F0C2494590900DFBD6A /* Main.storyboard */,
-				2AF79F0A2494590900DFBD6A /* ViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -623,10 +672,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AF79F3D24945BBF00DFBD6A /* Colors.xcassets in Resources */,
+				2A0ED2E124956B5B0042ACE8 /* Map.storyboard in Resources */,
+				2A0ED2E524956B650042ACE8 /* Profile.storyboard in Resources */,
+				2A0ED2DD24956B520042ACE8 /* Services.storyboard in Resources */,
 				2AF79F4124945BF300DFBD6A /* Images.xcassets in Resources */,
 				2AF79F132494590C00DFBD6A /* LaunchScreen.storyboard in Resources */,
 				2AF79F3F24945BDF00DFBD6A /* Icons.xcassets in Resources */,
 				2AF79F0E2494590900DFBD6A /* Main.storyboard in Resources */,
+				2A0ED2EA249574030042ACE8 /* Wallet.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,6 +687,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0ED2E624956B650042ACE8 /* Profile.storyboard in Resources */,
+				2A0ED2EB249574030042ACE8 /* Wallet.storyboard in Resources */,
+				2A0ED2DE24956B520042ACE8 /* Services.storyboard in Resources */,
+				2A0ED2E224956B5B0042ACE8 /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +698,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0ED2E724956B650042ACE8 /* Profile.storyboard in Resources */,
+				2A0ED2EC249574030042ACE8 /* Wallet.storyboard in Resources */,
+				2A0ED2DF24956B520042ACE8 /* Services.storyboard in Resources */,
+				2A0ED2E324956B5B0042ACE8 /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,7 +736,6 @@
 				2AABCF8C24945FAB0087A823 /* URLParameterEncoder.swift in Sources */,
 				2AABCFB724945FF70087A823 /* UITextField+Height.swift in Sources */,
 				2AABCF8F24945FAB0087A823 /* HTTPMethod.swift in Sources */,
-				2AF79F0B2494590900DFBD6A /* ViewController.swift in Sources */,
 				2A09C4262495137D008B3CAD /* DirectionsDAO.swift in Sources */,
 				2A09C42024948B8D008B3CAD /* GeocodingDAO.swift in Sources */,
 				2AABCF9324945FAB0087A823 /* Router.swift in Sources */,
