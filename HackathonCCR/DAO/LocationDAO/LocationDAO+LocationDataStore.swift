@@ -30,7 +30,6 @@ protocol LocationDataStore: AnyObject {
 
 extension LocationDAO: LocationDataStore {
     
-    
     func retriveCurrentUserLocation() throws -> CLLocation {
         
         guard let location = locationManager.location else {

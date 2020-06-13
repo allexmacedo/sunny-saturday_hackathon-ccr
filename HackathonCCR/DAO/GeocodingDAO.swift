@@ -13,13 +13,13 @@ protocol GeocodingDataStore {
     
     /// Reads the current city of the user
     /// - Parameter completion: Clousure that returns the city name or error if it occurs
-    func retriveLocationName(from location: CLLocation, completion: @escaping (Result<Location, Error>) -> Void)
+    func retriveLocationName(from location: CLLocation, completion: @escaping (Result<Location, LocationError>) -> Void)
     
     /// Retrive the location of a specific city
     /// - Parameters:
     ///   - cityName: The city used to request the location
     ///   - completion: Clousure that returns the city location or error if it occurs
-    func retriveCityLocation(cityName: String, completion: @escaping (Result<CLLocation, Error>) -> Void)
+    func retriveCityLocation(cityName: String, completion: @escaping (Result<CLLocation, LocationError>) -> Void)
 }
 
 final class GeocodingDAO: GeocodingDataStore {
@@ -28,7 +28,7 @@ final class GeocodingDAO: GeocodingDataStore {
     
     // Reads the current city of the user
     /// - Parameter completion: Clousure that returns the city name or error if it occurs
-    func retriveLocationName(from location: CLLocation, completion: @escaping (Result<Location, Error>) -> Void) {
+    func retriveLocationName(from location: CLLocation, completion: @escaping (Result<Location, LocationError>) -> Void) {
                 
         geocoder.reverseGeocodeLocation(location, preferredLocale: Locale.current) { (placemarks, error) in
             
@@ -52,7 +52,7 @@ final class GeocodingDAO: GeocodingDataStore {
     /// - Parameters:
     ///   - cityName: The city used to request the location
     ///   - completion: Clousure that returns the city location or error if it occurs
-    func retriveCityLocation(cityName: String, completion: @escaping (Result<CLLocation, Error>) -> Void) {
+    func retriveCityLocation(cityName: String, completion: @escaping (Result<CLLocation, LocationError>) -> Void) {
         
         let geoCoder = CLGeocoder()
         
