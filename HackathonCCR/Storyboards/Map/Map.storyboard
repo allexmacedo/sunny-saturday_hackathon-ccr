@@ -7,18 +7,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="TDD-Cf-u5C">
             <objects>
-                <viewController id="j7B-x7-lYz" sceneMemberID="viewController">
+                <viewController id="j7B-x7-lYz" customClass="MapViewController" customModule="HackathonCCR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IZe-r1-Ucq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gVk-IH-6cm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <outlet property="delegate" destination="j7B-x7-lYz" id="DzF-sH-BY9"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gVk-IH-6cm" firstAttribute="leading" secondItem="nlJ-8B-L2E" secondAttribute="leading" id="AWP-Kq-2bf"/>
+                            <constraint firstItem="nlJ-8B-L2E" firstAttribute="trailing" secondItem="gVk-IH-6cm" secondAttribute="trailing" id="NoV-ci-Ki8"/>
+                            <constraint firstAttribute="bottom" secondItem="gVk-IH-6cm" secondAttribute="bottom" id="Xpv-nt-LGh"/>
+                            <constraint firstItem="gVk-IH-6cm" firstAttribute="top" secondItem="IZe-r1-Ucq" secondAttribute="top" id="dco-q3-9vi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nlJ-8B-L2E"/>
                     </view>
                     <navigationItem key="navigationItem" id="zUq-69-i0x"/>
                     <connections>
+                        <outlet property="mapView" destination="gVk-IH-6cm" id="4uP-g6-ta6"/>
                         <segue destination="vcQ-Qb-ZXK" kind="presentation" identifier="Detail" id="X1l-j4-EtS"/>
                     </connections>
                 </viewController>

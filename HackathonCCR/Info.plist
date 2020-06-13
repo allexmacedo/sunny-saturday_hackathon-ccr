@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationUsageDescription</key>
+	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Precisamos de acesso à sua localização para idenificar os pontos de interesse próximos a você</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Precisamos de acesso à câmera para realizar a leitura do código QR</string>

@@ -41,6 +41,18 @@
 		2A0ED2EA249574030042ACE8 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0ED2E9249574030042ACE8 /* Wallet.storyboard */; };
 		2A0ED2EB249574030042ACE8 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0ED2E9249574030042ACE8 /* Wallet.storyboard */; };
 		2A0ED2EC249574030042ACE8 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A0ED2E9249574030042ACE8 /* Wallet.storyboard */; };
+		2A0ED2EE249578D00042ACE8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2ED249578D00042ACE8 /* MapViewController.swift */; };
+		2A0ED2EF249578D00042ACE8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2ED249578D00042ACE8 /* MapViewController.swift */; };
+		2A0ED2F0249578D00042ACE8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2ED249578D00042ACE8 /* MapViewController.swift */; };
+		2A0ED2F3249579770042ACE8 /* MapViewController+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2F2249579770042ACE8 /* MapViewController+Location.swift */; };
+		2A0ED2F4249579770042ACE8 /* MapViewController+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2F2249579770042ACE8 /* MapViewController+Location.swift */; };
+		2A0ED2F5249579770042ACE8 /* MapViewController+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2F2249579770042ACE8 /* MapViewController+Location.swift */; };
+		2A0ED2F724957B130042ACE8 /* MapViewController+MapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2F624957B130042ACE8 /* MapViewController+MapDelegate.swift */; };
+		2A0ED2F824957B130042ACE8 /* MapViewController+MapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2F624957B130042ACE8 /* MapViewController+MapDelegate.swift */; };
+		2A0ED2F924957B130042ACE8 /* MapViewController+MapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2F624957B130042ACE8 /* MapViewController+MapDelegate.swift */; };
+		2A0ED2FB24957BBF0042ACE8 /* MapViewController+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2FA24957BBF0042ACE8 /* MapViewController+User.swift */; };
+		2A0ED2FC24957BBF0042ACE8 /* MapViewController+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2FA24957BBF0042ACE8 /* MapViewController+User.swift */; };
+		2A0ED2FD24957BBF0042ACE8 /* MapViewController+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2FA24957BBF0042ACE8 /* MapViewController+User.swift */; };
 		2AABCF8924945FAB0087A823 /* NetworkDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */; };
 		2AABCF8A24945FAB0087A823 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */; };
 		2AABCF8B24945FAB0087A823 /* RequestEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */; };
@@ -125,6 +137,10 @@
 		2A0ED2E024956B5B0042ACE8 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		2A0ED2E424956B650042ACE8 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		2A0ED2E9249574030042ACE8 /* Wallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
+		2A0ED2ED249578D00042ACE8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2A0ED2F2249579770042ACE8 /* MapViewController+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+Location.swift"; sourceTree = "<group>"; };
+		2A0ED2F624957B130042ACE8 /* MapViewController+MapDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+MapDelegate.swift"; sourceTree = "<group>"; };
+		2A0ED2FA24957BBF0042ACE8 /* MapViewController+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+User.swift"; sourceTree = "<group>"; };
 		2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDAO.swift; sourceTree = "<group>"; };
 		2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEncodable.swift; sourceTree = "<group>"; };
@@ -266,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				2A0ED2E024956B5B0042ACE8 /* Map.storyboard */,
+				2A0ED2F1249579620042ACE8 /* MapViewController */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -284,6 +301,17 @@
 				2A0ED2E9249574030042ACE8 /* Wallet.storyboard */,
 			);
 			path = Wallet;
+			sourceTree = "<group>";
+		};
+		2A0ED2F1249579620042ACE8 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A0ED2ED249578D00042ACE8 /* MapViewController.swift */,
+				2A0ED2FA24957BBF0042ACE8 /* MapViewController+User.swift */,
+				2A0ED2F2249579770042ACE8 /* MapViewController+Location.swift */,
+				2A0ED2F624957B130042ACE8 /* MapViewController+MapDelegate.swift */,
+			);
+			path = MapViewController;
 			sourceTree = "<group>";
 		};
 		2AABCF7824945FAB0087A823 /* Network */ = {
@@ -745,6 +773,8 @@
 				2A09C42424948CF1008B3CAD /* LocationModel.swift in Sources */,
 				2A09C41E24948AEC008B3CAD /* QueueManager.swift in Sources */,
 				2AF79F4324945C1D00DFBD6A /* AppColors.swift in Sources */,
+				2A0ED2F3249579770042ACE8 /* MapViewController+Location.swift in Sources */,
+				2A0ED2EE249578D00042ACE8 /* MapViewController.swift in Sources */,
 				2AABCFDB249486F90087A823 /* CommercialFacilityAnnotation.swift in Sources */,
 				2A0ED2D124952D420042ACE8 /* DateComponentsFormatter+AppFormatter.swift in Sources */,
 				2AABCF8E24945FAB0087A823 /* HTTPTask.swift in Sources */,
@@ -753,6 +783,7 @@
 				2AF79F4A24945E0C00DFBD6A /* MeasurementFormatter+AppFormatters.swift in Sources */,
 				2AABCFB624945FF70087A823 /* UIView+CornerRadius.swift in Sources */,
 				2A09C41424948A52008B3CAD /* LocationDAO.swift in Sources */,
+				2A0ED2F724957B130042ACE8 /* MapViewController+MapDelegate.swift in Sources */,
 				2AABCF9024945FAB0087A823 /* EndPointType.swift in Sources */,
 				2AABCFC324945FF70087A823 /* UITableView+RegisterNib.swift in Sources */,
 				2A0ED2D62495435E0042ACE8 /* QRCodeView.swift in Sources */,
@@ -770,6 +801,7 @@
 				2AF79F4624945D8F00DFBD6A /* NumberFormatter+Currency.swift in Sources */,
 				2AABCFC224945FF70087A823 /* UIViewController+presentAlert.swift in Sources */,
 				2AABCFB324945FF70087A823 /* UICollectionView+BackgroundActivity.swift in Sources */,
+				2A0ED2FB24957BBF0042ACE8 /* MapViewController+User.swift in Sources */,
 				2A0ED2CC24951C2A0042ACE8 /* MKMapView+drawRoute.swift in Sources */,
 				2AABCFCB2494613E0087A823 /* UITextField+Padding.swift in Sources */,
 				2AF79F092494590900DFBD6A /* SceneDelegate.swift in Sources */,
@@ -782,15 +814,19 @@
 			files = (
 				2A0ED2D72495435E0042ACE8 /* QRCodeView.swift in Sources */,
 				2A09C42124948B8F008B3CAD /* GeocodingDAO.swift in Sources */,
+				2A0ED2F4249579770042ACE8 /* MapViewController+Location.swift in Sources */,
 				2AF79F4724945D8F00DFBD6A /* NumberFormatter+Currency.swift in Sources */,
 				2A09C4272495137D008B3CAD /* DirectionsDAO.swift in Sources */,
 				2AF79F4B24945E0C00DFBD6A /* MeasurementFormatter+AppFormatters.swift in Sources */,
 				2A0ED2D224952D420042ACE8 /* DateComponentsFormatter+AppFormatter.swift in Sources */,
+				2A0ED2EF249578D00042ACE8 /* MapViewController.swift in Sources */,
 				2AABCFD524947BDE0087A823 /* CommercialFacility.swift in Sources */,
 				2AABCFCC2494613E0087A823 /* UITextField+Padding.swift in Sources */,
 				2AABCFDC249486F90087A823 /* CommercialFacilityAnnotation.swift in Sources */,
 				2A0ED2CD24951C2A0042ACE8 /* MKMapView+drawRoute.swift in Sources */,
 				2AF79F4F24945E8F00DFBD6A /* NumberFormatter+Decimal.swift in Sources */,
+				2A0ED2F824957B130042ACE8 /* MapViewController+MapDelegate.swift in Sources */,
+				2A0ED2FC24957BBF0042ACE8 /* MapViewController+User.swift in Sources */,
 				2AABCFD0249461990087A823 /* Date+dateRanges.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -801,15 +837,19 @@
 			files = (
 				2A0ED2D82495435E0042ACE8 /* QRCodeView.swift in Sources */,
 				2A09C42224948B90008B3CAD /* GeocodingDAO.swift in Sources */,
+				2A0ED2F5249579770042ACE8 /* MapViewController+Location.swift in Sources */,
 				2AF79F4824945D8F00DFBD6A /* NumberFormatter+Currency.swift in Sources */,
 				2A09C4282495137D008B3CAD /* DirectionsDAO.swift in Sources */,
 				2AF79F4C24945E0C00DFBD6A /* MeasurementFormatter+AppFormatters.swift in Sources */,
 				2A0ED2D324952D420042ACE8 /* DateComponentsFormatter+AppFormatter.swift in Sources */,
+				2A0ED2F0249578D00042ACE8 /* MapViewController.swift in Sources */,
 				2AABCFD624947BDE0087A823 /* CommercialFacility.swift in Sources */,
 				2AABCFCD2494613E0087A823 /* UITextField+Padding.swift in Sources */,
 				2AABCFDD249486F90087A823 /* CommercialFacilityAnnotation.swift in Sources */,
 				2A0ED2CE24951C2A0042ACE8 /* MKMapView+drawRoute.swift in Sources */,
 				2AF79F5024945E8F00DFBD6A /* NumberFormatter+Decimal.swift in Sources */,
+				2A0ED2F924957B130042ACE8 /* MapViewController+MapDelegate.swift in Sources */,
+				2A0ED2FD24957BBF0042ACE8 /* MapViewController+User.swift in Sources */,
 				2AABCFD1249461990087A823 /* Date+dateRanges.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
