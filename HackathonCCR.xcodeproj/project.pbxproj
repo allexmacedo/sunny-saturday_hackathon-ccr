@@ -11,10 +11,13 @@
 		2AF79F092494590900DFBD6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF79F082494590900DFBD6A /* SceneDelegate.swift */; };
 		2AF79F0B2494590900DFBD6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF79F0A2494590900DFBD6A /* ViewController.swift */; };
 		2AF79F0E2494590900DFBD6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF79F0C2494590900DFBD6A /* Main.storyboard */; };
-		2AF79F102494590B00DFBD6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF79F0F2494590B00DFBD6A /* Assets.xcassets */; };
 		2AF79F132494590C00DFBD6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF79F112494590C00DFBD6A /* LaunchScreen.storyboard */; };
 		2AF79F1E2494590C00DFBD6A /* HackathonCCRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF79F1D2494590C00DFBD6A /* HackathonCCRTests.swift */; };
 		2AF79F292494590C00DFBD6A /* HackathonCCRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF79F282494590C00DFBD6A /* HackathonCCRUITests.swift */; };
+		2AF79F3D24945BBF00DFBD6A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF79F3C24945BBF00DFBD6A /* Colors.xcassets */; };
+		2AF79F3F24945BDF00DFBD6A /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF79F3E24945BDF00DFBD6A /* Icons.xcassets */; };
+		2AF79F4124945BF300DFBD6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF79F4024945BF300DFBD6A /* Images.xcassets */; };
+		2AF79F4324945C1D00DFBD6A /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF79F4224945C1D00DFBD6A /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,6 @@
 		2AF79F082494590900DFBD6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2AF79F0A2494590900DFBD6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2AF79F0D2494590900DFBD6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2AF79F0F2494590B00DFBD6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AF79F122494590C00DFBD6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AF79F142494590C00DFBD6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AF79F192494590C00DFBD6A /* HackathonCCRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackathonCCRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +51,10 @@
 		2AF79F242494590C00DFBD6A /* HackathonCCRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackathonCCRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF79F282494590C00DFBD6A /* HackathonCCRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonCCRUITests.swift; sourceTree = "<group>"; };
 		2AF79F2A2494590C00DFBD6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AF79F3C24945BBF00DFBD6A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		2AF79F3E24945BDF00DFBD6A /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		2AF79F4024945BF300DFBD6A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2AF79F4224945C1D00DFBD6A /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +105,9 @@
 		2AF79F052494590900DFBD6A /* HackathonCCR */ = {
 			isa = PBXGroup;
 			children = (
-				2AF79F062494590900DFBD6A /* AppDelegate.swift */,
-				2AF79F082494590900DFBD6A /* SceneDelegate.swift */,
-				2AF79F0A2494590900DFBD6A /* ViewController.swift */,
-				2AF79F0C2494590900DFBD6A /* Main.storyboard */,
-				2AF79F0F2494590B00DFBD6A /* Assets.xcassets */,
-				2AF79F112494590C00DFBD6A /* LaunchScreen.storyboard */,
+				2AF79F362494597400DFBD6A /* Main Application */,
+				2AF79F37249459C800DFBD6A /* Resources */,
+				2AF79F3924945B7100DFBD6A /* Storyboards */,
 				2AF79F142494590C00DFBD6A /* Info.plist */,
 			);
 			path = HackathonCCR;
@@ -128,6 +131,52 @@
 			path = HackathonCCRUITests;
 			sourceTree = "<group>";
 		};
+		2AF79F362494597400DFBD6A /* Main Application */ = {
+			isa = PBXGroup;
+			children = (
+				2AF79F062494590900DFBD6A /* AppDelegate.swift */,
+				2AF79F082494590900DFBD6A /* SceneDelegate.swift */,
+			);
+			path = "Main Application";
+			sourceTree = "<group>";
+		};
+		2AF79F37249459C800DFBD6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2AF79F3A24945B8A00DFBD6A /* Colors */,
+				2AF79F3E24945BDF00DFBD6A /* Icons.xcassets */,
+				2AF79F4024945BF300DFBD6A /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2AF79F3924945B7100DFBD6A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2AF79F112494590C00DFBD6A /* LaunchScreen.storyboard */,
+				2AF79F3B24945BAD00DFBD6A /* Main */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2AF79F3A24945B8A00DFBD6A /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				2AF79F3C24945BBF00DFBD6A /* Colors.xcassets */,
+				2AF79F4224945C1D00DFBD6A /* AppColors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		2AF79F3B24945BAD00DFBD6A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2AF79F0C2494590900DFBD6A /* Main.storyboard */,
+				2AF79F0A2494590900DFBD6A /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +187,7 @@
 				2AF79EFF2494590900DFBD6A /* Sources */,
 				2AF79F002494590900DFBD6A /* Frameworks */,
 				2AF79F012494590900DFBD6A /* Resources */,
+				2AF79F3824945A6700DFBD6A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -232,8 +282,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AF79F3D24945BBF00DFBD6A /* Colors.xcassets in Resources */,
+				2AF79F4124945BF300DFBD6A /* Images.xcassets in Resources */,
 				2AF79F132494590C00DFBD6A /* LaunchScreen.storyboard in Resources */,
-				2AF79F102494590B00DFBD6A /* Assets.xcassets in Resources */,
+				2AF79F3F24945BDF00DFBD6A /* Icons.xcassets in Resources */,
 				2AF79F0E2494590900DFBD6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,12 +306,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AF79F3824945A6700DFBD6A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: Swiftlint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2AF79EFF2494590900DFBD6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2AF79F0B2494590900DFBD6A /* ViewController.swift in Sources */,
+				2AF79F4324945C1D00DFBD6A /* AppColors.swift in Sources */,
 				2AF79F072494590900DFBD6A /* AppDelegate.swift in Sources */,
 				2AF79F092494590900DFBD6A /* SceneDelegate.swift in Sources */,
 			);
@@ -437,6 +510,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S4Q3AU77J8;
 				INFOPLIST_FILE = HackathonCCR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +529,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S4Q3AU77J8;
 				INFOPLIST_FILE = HackathonCCR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
