@@ -1,6 +1,6 @@
 //
 //  RequestEncodable.swift
-//  AppDemias
+//  HackathonCCR
 //
 //  Created by Lucas Antevere Santana on 28/04/20.
 //  Copyright © 2020 Mascarados. All rights reserved.

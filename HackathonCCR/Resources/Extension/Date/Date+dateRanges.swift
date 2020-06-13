@@ -17,6 +17,7 @@ extension Date {
     }
     
     var beginOfMonth: Date? {
+        
         let components = Calendar.current.dateComponents([.month, .year], from: self)
         
         guard let year = components.year, let month = components.month else {return nil}

@@ -1,6 +1,6 @@
 //
 //  AppFonts.swift
-//  AppDemias
+//  HackathonCCR
 //
 //  Created by Lucas Antevere Santana on 14/05/20.
 //  Copyright © 2020 Mascarados. All rights reserved.

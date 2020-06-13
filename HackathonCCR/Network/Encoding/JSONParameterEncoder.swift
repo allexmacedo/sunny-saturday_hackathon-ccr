@@ -1,6 +1,6 @@
 //
 //  JSONParameterEncoder.swift
-//  AppDemias
+//  HackathonCCR
 //
 //  Created by Lucas Antevere Santana on 20/04/20.
 //  Copyright © 2020 Mascarados. All rights reserved.
