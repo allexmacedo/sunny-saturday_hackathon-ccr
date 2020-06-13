@@ -19,11 +19,11 @@ extension NumberFormatter {
         return numberFormatter
     }
        
-    func localizedCurrencyString(from number: Double) -> String? {
+    static func localizedCurrencyString(from number: Double) -> String? {
         return NumberFormatter.currencyFormatter.string(from: NSNumber(value: number))
     }
     
-    func currencyNumber(from text: String) -> Double? {
+    static func currencyNumber(from text: String) -> Double? {
         return NumberFormatter.currencyFormatter.number(from: text) as? Double
     }
 }

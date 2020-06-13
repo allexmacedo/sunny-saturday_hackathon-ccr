@@ -19,11 +19,11 @@ extension NumberFormatter {
         return numberFormatter
     }
     
-    func localizedDecimalString(from number: Double) -> String? {
+    static func localizedDecimalString(from number: Double) -> String? {
         return NumberFormatter.decimalFormatter.string(from: NSNumber(value: number))
     }
     
-    func decimalNumber(from text: String) -> Double? {
+    static func decimalNumber(from text: String) -> Double? {
         return NumberFormatter.decimalFormatter.number(from: text) as? Double
     }
 }

@@ -35,6 +35,16 @@ protocol LocationBusinessLogic: AnyObject {
     ///   - observer: The object that will observe
     ///   - selector: The Selector method 
     func registerForAuthorizationChangeNotification(observer: Any, selector: Selector)
+    
+    /// Compute routes from diferents points
+    /// - Parameters:
+    ///   - origin: Origin of the route
+    ///   - destinations: Destination of the route
+    ///   - completion: Result of route calc, with routes or error if there is one
+    func calculateDirections(from origin: CLLocationCoordinate2D,
+                             to destination: CLLocationCoordinate2D,
+                             completion: @escaping (Result<MKRoute, DirectionsError>) -> Void)
+    
 }
 
 final class LocationServices: LocationBusinessLogic {
@@ -42,6 +52,8 @@ final class LocationServices: LocationBusinessLogic {
     var locationDataStore: LocationDataStore = LocationDAO.sharedInstance
     
     var geocoderDataStore: GeocodingDataStore = GeocodingDAO()
+    
+    var directionsDataStore: DirectionsDataStore = DirectionsDAO()
         
     func retriveCurrentLocationLabels(completion: @escaping (Result<Location, LocationError>) -> Void) {
         
@@ -116,5 +128,42 @@ final class LocationServices: LocationBusinessLogic {
     func registerForAuthorizationChangeNotification(observer: Any, selector: Selector) {
         NotificationCenter.default.addObserver(observer, selector: selector,
                                                name: LocationChangeNotification.authorizationDidChange.name, object: nil)
+    }
+    
+    /// Compute routes from diferents points
+    /// - Parameters:
+    ///   - origin: Origin of the route
+    ///   - destinations: Destination of the route
+    ///   - completion: Result of route calc, with routes or error if there is one
+    func calculateDirections(from origin: CLLocationCoordinate2D,
+                             to destination: CLLocationCoordinate2D,
+                             completion: @escaping (Result<MKRoute, DirectionsError>) -> Void) {
+        
+        let blockForExecutionInBackground = BlockOperation {
+            
+            self.directionsDataStore.calculateDirections(from: origin, to: destination) { (result) in
+             
+                switch result {
+                    
+                    case .success(let routes):
+                        
+                        var sortedRoutes = routes
+                        
+                        sortedRoutes.sort {$0.expectedTravelTime < $1.expectedTravelTime}
+                    
+                        if let firstRoute = sortedRoutes.first {
+                            completion(.success(firstRoute))
+                            
+                        } else {
+                            completion(.failure(DirectionsError.emptyRoutes))
+                    }
+                    
+                    case .failure(let error):
+                        completion(.failure(error))
+                }
+            }
+        }
+        
+        QueueManager.sharedInstance.executeBlock(blockForExecutionInBackground, queueType: .serial)
     }
 }
