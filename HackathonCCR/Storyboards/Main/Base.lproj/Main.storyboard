@@ -18,6 +18,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" name="Green"/>
+                        <color key="selectedImageTintColor" name="Green"/>
                     </tabBar>
                     <connections>
                         <segue destination="RKa-iI-hSz" kind="relationship" relationship="viewControllers" id="GkX-f8-ruq"/>
@@ -28,7 +29,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNZ-zj-ODe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1164" y="164"/>
+            <point key="canvasLocation" x="-1045" y="113"/>
         </scene>
         <!--Home-->
         <scene sceneID="ArP-kR-spb">

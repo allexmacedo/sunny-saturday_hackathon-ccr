@@ -46,7 +46,7 @@
         <scene sceneID="GEG-vd-xZX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BTb-tv-LdM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Carteira" id="XrW-DS-IZT"/>
+                    <tabBarItem key="tabBarItem" title="Carteira" image="star_icon" selectedImage="star_icon_fill" id="XrW-DS-IZT"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cgn-lo-2Gb">
@@ -65,8 +65,10 @@
     </scenes>
     <color key="tintColor" name="Green"/>
     <resources>
+        <image name="star_icon" width="24" height="24"/>
+        <image name="star_icon_fill" width="24" height="24"/>
         <namedColor name="Green">
-            <color red="0.1478357911" green="0.83092874289999996" blue="0.39991950990000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.043000001460313797" green="0.65799999237060547" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
