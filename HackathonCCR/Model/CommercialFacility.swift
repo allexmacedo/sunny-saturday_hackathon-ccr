@@ -14,7 +14,15 @@ struct CommercialFacility: Decodable {
     
     let name: String
     
-    let category: FacilityCategory
+    let description: String
+    
+    let address: String
+    
+    let timeOfWork: String
+    
+    let phone: String
+    
+    let category: [FacilityCategory]
     
     let image: String
     
@@ -33,9 +41,16 @@ struct CommercialFacility: Decodable {
         case latitude
         case longitude
         case verified
+        case address
+        case timeOfWork
+        case phone
+        case description
     }
     
-    init(id: UUID, name: String, category: FacilityCategory, image: String, rating: Double, verified: Bool, coordinate: CLLocation) {
+    init(id: UUID, name: String, category: [FacilityCategory], description: String,
+         address: String, timeOfWork: String, phone: String,
+         image: String, rating: Double, verified: Bool, coordinate: CLLocation) {
+        
         self.image = image
         self.id = id
         self.name = name
@@ -43,28 +58,41 @@ struct CommercialFacility: Decodable {
         self.rating = rating
         self.coordinate = coordinate
         self.verified = verified
+        self.address = address
+        self.timeOfWork = timeOfWork
+        self.phone = phone
+        self.description = description
     }
     
     init(from decoder: Decoder) throws {
         
-        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let container                    = try decoder.container(keyedBy: CodingKeys.self)
         
-        let id: UUID = try container.decode(UUID.self, forKey: .id)
+        let id: UUID                     = try container.decode(UUID.self, forKey: .id)
         
-        let name: String = try container.decode(String.self, forKey: .id)
+        let name: String                 = try container.decode(String.self, forKey: .name)
         
-        let image: String = try container.decode(String.self, forKey: .id)
+        let image: String                = try container.decode(String.self, forKey: .image)
         
-        let category: FacilityCategory = try container.decode(FacilityCategory.self, forKey: .category)
+        let address: String              = try container.decode(String.self, forKey: .address)
         
-        let verified: Bool = try container.decode(Bool.self, forKey: .verified)
+        let description: String          = try container.decode(String.self, forKey: .description)
         
-        let rating: Double = try container.decode(Double.self, forKey: .id)
+        let timeOfWork: String           = try container.decode(String.self, forKey: .timeOfWork)
         
-        let latitude: Double = try container.decode(Double.self, forKey: .id)
-        let longitude: Double = try container.decode(Double.self, forKey: .id)
+        let phone: String                = try container.decode(String.self, forKey: .phone)
+
+        let category: [FacilityCategory] = try container.decode([FacilityCategory].self, forKey: .category)
         
-        self.init(id: id, name: name, category: category, image: image,
+        let verified: Bool               = try container.decode(Bool.self, forKey: .verified)
+        
+        let rating: Double               = try container.decode(Double.self, forKey: .rating)
+        
+        let latitude: Double             = try container.decode(Double.self, forKey: .latitude)
+        let longitude: Double            = try container.decode(Double.self, forKey: .longitude)
+        
+        self.init(id: id, name: name, category: category, description: description,
+                  address: address, timeOfWork: timeOfWork, phone: phone, image: image,
                   rating: rating, verified: verified, coordinate: CLLocation(latitude: latitude, longitude: longitude))
     }
 }

@@ -8,21 +8,26 @@
 import UIKit
 
 extension FacilityViewController {
-   
+    
     func configureCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
         
         collectionView.register(nibClass: ImageCell.self)
         collectionView.register(nibClass: DetailCell.self)
-
+        collectionView.register(nibClass: LabelCell.self)
+        
     }
 }
 
 extension FacilityViewController: UICollectionViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -31,42 +36,88 @@ extension FacilityViewController: UICollectionViewDataSource {
         
         let width = self.view.frame.width - 2 * 16
         
-        switch indexPath.row {
-            case 0:
-                cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCell.identifier, for: indexPath)
+        if indexPath.section == 0 {
+            
+            switch indexPath.row {
                 
-                if let imageCell = cell as? ImageCell {
-                    imageCell.configure(image: UIImage(named: "graal_bg"), width: width)
+                case 0:
+                    cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCell.identifier, for: indexPath)
+                    
+                    if let imageCell = cell as? ImageCell {
+                        imageCell.configure(image: UIImage(named: "graal_bg"), width: width)
+                }
+                
+                case 1:
+                    
+                    cell = collectionView.dequeueReusableCell(withReuseIdentifier: DetailCell.identifier, for: indexPath)
+                    
+                    if let detailCell = cell as? DetailCell, let facility = facility {
+                        
+                        let image = UIImage(named: facility.image)
+                        
+                        let rating: String? = NumberFormatter.localizedDecimalString(from: facility.rating)
+                        
+                        let distance = userLocation?.distance(from: facility.coordinate)
+                        
+                        var distanceLabel: String?
+                        
+                        if let distance = distance {
+                            distanceLabel = LengthFormatter.localizedString(fromMeters: distance)
+                        }
+                        
+                        detailCell.configure(image: image, rating: rating, distance: distanceLabel,
+                                             verified: facility.verified, width: width)
+                }
+                
+                case 2:
+                    cell = collectionView.dequeueReusableCell(withReuseIdentifier: LabelCell.identifier, for: indexPath)
+                    if let labelCell = cell as? LabelCell, let facility = facility {
+                        labelCell.configure(text: facility.description, alignment: .center, width: width)
+                }
+                
+                default:
+                    cell = UICollectionViewCell()
             }
             
-            case 1:
+        } else {
+            
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: LabelCell.identifier, for: indexPath)
+            
+            if let labelCell = cell as? LabelCell, let facility = facility {
                 
-                cell = collectionView.dequeueReusableCell(withReuseIdentifier: DetailCell.identifier, for: indexPath)
-            
-                if let detailCell = cell as? DetailCell, let facility = facility {
+                var headText: String?
+                let text: String
+                
+                if indexPath.row == 0 {
                     
-                    let image = UIImage(named: facility.image)
-                                        
-                    let rating: String? = NumberFormatter.localizedDecimalString(from: facility.rating)
+                    headText = "Endereço"
+                    text = facility.address
                     
-                    let distance = userLocation?.distance(from: facility.coordinate)
+                } else if indexPath.row == 1 {
+                    headText = "Horário"
+                    text = facility.timeOfWork
                     
-                    var distanceLabel: String?
+                } else {
                     
-                    if let distance = distance {
-                        distanceLabel = LengthFormatter.localizedString(fromMeters: distance)
-                    }
-                    
-                    detailCell.configure(image: image, rating: rating, distance: distanceLabel,
-                                         verified: facility.verified, width: width)
+                    headText = "Telefone"
+                    text = facility.phone
+                }
+                
+                labelCell.configure(headText: headText, text: text, alignment: .natural, width: width)
             }
-            
-            default:
-                cell = UICollectionViewCell()
         }
         
         return cell
     }
 }
-
-extension FacilityViewController: UICollectionViewDelegate {}
+extension FacilityViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        guard section != 0 else {return .zero}
+        
+        return 16
+    }
+    
+}

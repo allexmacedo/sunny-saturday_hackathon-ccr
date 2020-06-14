@@ -158,6 +158,8 @@
 		2AC670F52496ACE600A41FF4 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AC670F32496ACE600A41FF4 /* ImageCell.xib */; };
 		2AC670F92496AECA00A41FF4 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC670F72496AECA00A41FF4 /* DetailCell.swift */; };
 		2AC670FA2496AECA00A41FF4 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AC670F82496AECA00A41FF4 /* DetailCell.xib */; };
+		2AC671022496BADE00A41FF4 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC671002496BADE00A41FF4 /* LabelCell.swift */; };
+		2AC671032496BADE00A41FF4 /* LabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AC671012496BADE00A41FF4 /* LabelCell.xib */; };
 		2AE1691A249695710069E63D /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE16919249695710069E63D /* RoundedView.swift */; };
 		2AE1691E249697840069E63D /* FacilitiesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1691D249697840069E63D /* FacilitiesServices.swift */; };
 		2AE1691F249697840069E63D /* FacilitiesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1691D249697840069E63D /* FacilitiesServices.swift */; };
@@ -276,6 +278,8 @@
 		2AC670F32496ACE600A41FF4 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 		2AC670F72496AECA00A41FF4 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		2AC670F82496AECA00A41FF4 /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
+		2AC671002496BADE00A41FF4 /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
+		2AC671012496BADE00A41FF4 /* LabelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelCell.xib; sourceTree = "<group>"; };
 		2AE16919249695710069E63D /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		2AE1691D249697840069E63D /* FacilitiesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesServices.swift; sourceTree = "<group>"; };
 		2AE16921249698520069E63D /* FacilitiesDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesDAO.swift; sourceTree = "<group>"; };
@@ -726,6 +730,7 @@
 		2AC670F02496ACC700A41FF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2AC670FB2496BA6800A41FF4 /* TextCell */,
 				2AC670F62496AEAD00A41FF4 /* DetailCell */,
 				2AC670F12496ACD200A41FF4 /* ImageCell */,
 			);
@@ -748,6 +753,15 @@
 				2AC670F82496AECA00A41FF4 /* DetailCell.xib */,
 			);
 			path = DetailCell;
+			sourceTree = "<group>";
+		};
+		2AC670FB2496BA6800A41FF4 /* TextCell */ = {
+			isa = PBXGroup;
+			children = (
+				2AC671002496BADE00A41FF4 /* LabelCell.swift */,
+				2AC671012496BADE00A41FF4 /* LabelCell.xib */,
+			);
+			path = TextCell;
 			sourceTree = "<group>";
 		};
 		2AE1692524969CD00069E63D /* MKDistanceFormmater */ = {
@@ -1003,6 +1017,7 @@
 				2A2D8D0F249669F000819876 /* CardCell.xib in Resources */,
 				2A2D8CDC2495DAC700819876 /* TextCell.xib in Resources */,
 				2AF79F3F24945BDF00DFBD6A /* Icons.xcassets in Resources */,
+				2AC671032496BADE00A41FF4 /* LabelCell.xib in Resources */,
 				2A2D8CC82495CEF900819876 /* CategoryCell.xib in Resources */,
 				2AF79F0E2494590900DFBD6A /* Main.storyboard in Resources */,
 				2A0ED2EA249574030042ACE8 /* Wallet.storyboard in Resources */,
@@ -1088,6 +1103,7 @@
 				2AABCF8F24945FAB0087A823 /* HTTPMethod.swift in Sources */,
 				2A09C4262495137D008B3CAD /* DirectionsDAO.swift in Sources */,
 				2A09C42024948B8D008B3CAD /* GeocodingDAO.swift in Sources */,
+				2AC671022496BADE00A41FF4 /* LabelCell.swift in Sources */,
 				2AABCF9324945FAB0087A823 /* Router.swift in Sources */,
 				2A09C41524948A52008B3CAD /* LocationDAO+LocationDataStore.swift in Sources */,
 				2AABCF8924945FAB0087A823 /* NetworkDAO.swift in Sources */,
