@@ -14,4 +14,8 @@ extension MapViewController: MKMapViewDelegate {
         
         centerMapOnUserLocation()
     }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        self.performSegue(withIdentifier: Segues.annotationInformations.rawValue, sender: nil)
+    }
 }

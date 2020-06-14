@@ -10,4 +10,11 @@ import Foundation
 
 struct CommercialFacility: Codable {
     
+    let id: UUID
+    
+    let name: String
+    
+    let category: String
+    
+    let rating: Double
 }

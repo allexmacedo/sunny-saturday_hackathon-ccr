@@ -34,28 +34,20 @@
                     <navigationItem key="navigationItem" id="zUq-69-i0x"/>
                     <connections>
                         <outlet property="mapView" destination="gVk-IH-6cm" id="4uP-g6-ta6"/>
-                        <segue destination="vcQ-Qb-ZXK" kind="presentation" identifier="Detail" id="X1l-j4-EtS"/>
+                        <segue destination="GsK-oE-pFI" kind="presentation" identifier="FacilityInformation" id="9CZ-4C-r3b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZLQ-GG-diW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="195.53571428571428"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="vCR-uZ-O6f">
+        <!--Storyboard Reference-->
+        <scene sceneID="Dak-TT-zr7">
             <objects>
-                <viewController id="vcQ-Qb-ZXK" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="G1b-ug-bas">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="3qE-pC-Wbc"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="XIk-cL-gfA"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UoG-yf-YRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder id="GsK-oE-pFI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B8l-PG-S0e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="989.85507246376824" y="195.53571428571428"/>
+            <point key="canvasLocation" x="1018" y="196"/>
         </scene>
         <!--Item-->
         <scene sceneID="l4z-dG-FFV">

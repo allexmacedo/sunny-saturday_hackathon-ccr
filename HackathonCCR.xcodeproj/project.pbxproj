@@ -53,6 +53,18 @@
 		2A0ED2FB24957BBF0042ACE8 /* MapViewController+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2FA24957BBF0042ACE8 /* MapViewController+User.swift */; };
 		2A0ED2FC24957BBF0042ACE8 /* MapViewController+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2FA24957BBF0042ACE8 /* MapViewController+User.swift */; };
 		2A0ED2FD24957BBF0042ACE8 /* MapViewController+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2FA24957BBF0042ACE8 /* MapViewController+User.swift */; };
+		2A2D8C9A2495BCB600819876 /* CommercialFacilities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8C992495BCB600819876 /* CommercialFacilities.storyboard */; };
+		2A2D8C9B2495BCB600819876 /* CommercialFacilities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8C992495BCB600819876 /* CommercialFacilities.storyboard */; };
+		2A2D8C9C2495BCB600819876 /* CommercialFacilities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8C992495BCB600819876 /* CommercialFacilities.storyboard */; };
+		2A2D8C9E2495C40100819876 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8C9D2495C40100819876 /* MainTabController.swift */; };
+		2A2D8C9F2495C40100819876 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8C9D2495C40100819876 /* MainTabController.swift */; };
+		2A2D8CA02495C40100819876 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8C9D2495C40100819876 /* MainTabController.swift */; };
+		2A2D8CA32495C5B000819876 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8CA22495C5B000819876 /* Login.storyboard */; };
+		2A2D8CA42495C5B000819876 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8CA22495C5B000819876 /* Login.storyboard */; };
+		2A2D8CA52495C5B000819876 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8CA22495C5B000819876 /* Login.storyboard */; };
+		2A2D8CA72495C60A00819876 /* MapViewController+Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CA62495C60A00819876 /* MapViewController+Annotations.swift */; };
+		2A2D8CA82495C60A00819876 /* MapViewController+Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CA62495C60A00819876 /* MapViewController+Annotations.swift */; };
+		2A2D8CA92495C60A00819876 /* MapViewController+Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CA62495C60A00819876 /* MapViewController+Annotations.swift */; };
 		2AABCF8924945FAB0087A823 /* NetworkDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */; };
 		2AABCF8A24945FAB0087A823 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */; };
 		2AABCF8B24945FAB0087A823 /* RequestEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */; };
@@ -141,6 +153,10 @@
 		2A0ED2F2249579770042ACE8 /* MapViewController+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+Location.swift"; sourceTree = "<group>"; };
 		2A0ED2F624957B130042ACE8 /* MapViewController+MapDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+MapDelegate.swift"; sourceTree = "<group>"; };
 		2A0ED2FA24957BBF0042ACE8 /* MapViewController+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+User.swift"; sourceTree = "<group>"; };
+		2A2D8C992495BCB600819876 /* CommercialFacilities.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CommercialFacilities.storyboard; sourceTree = "<group>"; };
+		2A2D8C9D2495C40100819876 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		2A2D8CA22495C5B000819876 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		2A2D8CA62495C60A00819876 /* MapViewController+Annotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+Annotations.swift"; sourceTree = "<group>"; };
 		2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDAO.swift; sourceTree = "<group>"; };
 		2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEncodable.swift; sourceTree = "<group>"; };
@@ -281,6 +297,7 @@
 		2A0ED2DA24956B290042ACE8 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				2AABCFD9249486BE0087A823 /* ViewModel */,
 				2A0ED2E024956B5B0042ACE8 /* Map.storyboard */,
 				2A0ED2F1249579620042ACE8 /* MapViewController */,
 			);
@@ -310,8 +327,25 @@
 				2A0ED2FA24957BBF0042ACE8 /* MapViewController+User.swift */,
 				2A0ED2F2249579770042ACE8 /* MapViewController+Location.swift */,
 				2A0ED2F624957B130042ACE8 /* MapViewController+MapDelegate.swift */,
+				2A2D8CA62495C60A00819876 /* MapViewController+Annotations.swift */,
 			);
 			path = MapViewController;
+			sourceTree = "<group>";
+		};
+		2A2D8C982495BC6400819876 /* CommercialFacilities */ = {
+			isa = PBXGroup;
+			children = (
+				2A2D8C992495BCB600819876 /* CommercialFacilities.storyboard */,
+			);
+			path = CommercialFacilities;
+			sourceTree = "<group>";
+		};
+		2A2D8CA12495C48000819876 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2A2D8CA22495C5B000819876 /* Login.storyboard */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		2AABCF7824945FAB0087A823 /* Network */ = {
@@ -548,10 +582,11 @@
 			isa = PBXGroup;
 			children = (
 				2A0ED2D4249535890042ACE8 /* View */,
-				2AABCFD9249486BE0087A823 /* ViewModel */,
 				2AF79F112494590C00DFBD6A /* LaunchScreen.storyboard */,
 				2AF79F3B24945BAD00DFBD6A /* Main */,
 				2A0ED2D924956B100042ACE8 /* Services */,
+				2A2D8C982495BC6400819876 /* CommercialFacilities */,
+				2A2D8CA12495C48000819876 /* Login */,
 				2A0ED2DA24956B290042ACE8 /* Map */,
 				2A0ED2E8249573F10042ACE8 /* Wallet */,
 				2A0ED2DB24956B360042ACE8 /* Profile */,
@@ -572,6 +607,7 @@
 			isa = PBXGroup;
 			children = (
 				2AF79F0C2494590900DFBD6A /* Main.storyboard */,
+				2A2D8C9D2495C40100819876 /* MainTabController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -708,6 +744,8 @@
 				2AF79F3F24945BDF00DFBD6A /* Icons.xcassets in Resources */,
 				2AF79F0E2494590900DFBD6A /* Main.storyboard in Resources */,
 				2A0ED2EA249574030042ACE8 /* Wallet.storyboard in Resources */,
+				2A2D8C9A2495BCB600819876 /* CommercialFacilities.storyboard in Resources */,
+				2A2D8CA32495C5B000819876 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,8 +755,10 @@
 			files = (
 				2A0ED2E624956B650042ACE8 /* Profile.storyboard in Resources */,
 				2A0ED2EB249574030042ACE8 /* Wallet.storyboard in Resources */,
+				2A2D8CA42495C5B000819876 /* Login.storyboard in Resources */,
 				2A0ED2DE24956B520042ACE8 /* Services.storyboard in Resources */,
 				2A0ED2E224956B5B0042ACE8 /* Map.storyboard in Resources */,
+				2A2D8C9B2495BCB600819876 /* CommercialFacilities.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,8 +768,10 @@
 			files = (
 				2A0ED2E724956B650042ACE8 /* Profile.storyboard in Resources */,
 				2A0ED2EC249574030042ACE8 /* Wallet.storyboard in Resources */,
+				2A2D8CA52495C5B000819876 /* Login.storyboard in Resources */,
 				2A0ED2DF24956B520042ACE8 /* Services.storyboard in Resources */,
 				2A0ED2E324956B5B0042ACE8 /* Map.storyboard in Resources */,
+				2A2D8C9C2495BCB600819876 /* CommercialFacilities.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,6 +822,7 @@
 				2AABCF8E24945FAB0087A823 /* HTTPTask.swift in Sources */,
 				2AABCFBE24945FF70087A823 /* String+Regex.swift in Sources */,
 				2AABCFD424947BDE0087A823 /* CommercialFacility.swift in Sources */,
+				2A2D8C9E2495C40100819876 /* MainTabController.swift in Sources */,
 				2AF79F4A24945E0C00DFBD6A /* MeasurementFormatter+AppFormatters.swift in Sources */,
 				2AABCFB624945FF70087A823 /* UIView+CornerRadius.swift in Sources */,
 				2A09C41424948A52008B3CAD /* LocationDAO.swift in Sources */,
@@ -797,6 +840,7 @@
 				2AABCFB424945FF70087A823 /* UICollectionView+registerNib.swift in Sources */,
 				2AABCF9224945FAB0087A823 /* NetoworkRouter.swift in Sources */,
 				2AABCF8D24945FAB0087A823 /* JSONParameterEncoder.swift in Sources */,
+				2A2D8CA72495C60A00819876 /* MapViewController+Annotations.swift in Sources */,
 				2AF79F4E24945E8F00DFBD6A /* NumberFormatter+Decimal.swift in Sources */,
 				2AF79F4624945D8F00DFBD6A /* NumberFormatter+Currency.swift in Sources */,
 				2AABCFC224945FF70087A823 /* UIViewController+presentAlert.swift in Sources */,
@@ -816,6 +860,8 @@
 				2A09C42124948B8F008B3CAD /* GeocodingDAO.swift in Sources */,
 				2A0ED2F4249579770042ACE8 /* MapViewController+Location.swift in Sources */,
 				2AF79F4724945D8F00DFBD6A /* NumberFormatter+Currency.swift in Sources */,
+				2A2D8CA82495C60A00819876 /* MapViewController+Annotations.swift in Sources */,
+				2A2D8C9F2495C40100819876 /* MainTabController.swift in Sources */,
 				2A09C4272495137D008B3CAD /* DirectionsDAO.swift in Sources */,
 				2AF79F4B24945E0C00DFBD6A /* MeasurementFormatter+AppFormatters.swift in Sources */,
 				2A0ED2D224952D420042ACE8 /* DateComponentsFormatter+AppFormatter.swift in Sources */,
@@ -839,6 +885,8 @@
 				2A09C42224948B90008B3CAD /* GeocodingDAO.swift in Sources */,
 				2A0ED2F5249579770042ACE8 /* MapViewController+Location.swift in Sources */,
 				2AF79F4824945D8F00DFBD6A /* NumberFormatter+Currency.swift in Sources */,
+				2A2D8CA92495C60A00819876 /* MapViewController+Annotations.swift in Sources */,
+				2A2D8CA02495C40100819876 /* MainTabController.swift in Sources */,
 				2A09C4282495137D008B3CAD /* DirectionsDAO.swift in Sources */,
 				2AF79F4C24945E0C00DFBD6A /* MeasurementFormatter+AppFormatters.swift in Sources */,
 				2A0ED2D324952D420042ACE8 /* DateComponentsFormatter+AppFormatter.swift in Sources */,

@@ -11,6 +11,11 @@ import MapKit
 
 class MapViewController: UIViewController {
     
+    // MARK: Segues
+    enum Segues: String {
+        case annotationInformations = "FacilityInformation"
+    }
+    
     // MARK: Services
     var locationServices: LocationBusinessLogic = LocationServices()
 
@@ -22,5 +27,17 @@ class MapViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         requestAuthorizationForLocation(completion: configureMapView)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: true )
     }
 }
