@@ -121,6 +121,8 @@
 		2A2D8D162496857500819876 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8D152496857500819876 /* QRScanViewController.swift */; };
 		2A2D8D172496857500819876 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8D152496857500819876 /* QRScanViewController.swift */; };
 		2A2D8D182496857500819876 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8D152496857500819876 /* QRScanViewController.swift */; };
+		2A91B2982496CA2C0055379E /* CategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91B2962496CA2C0055379E /* CategoryCollectionCell.swift */; };
+		2A91B2992496CA2C0055379E /* CategoryCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A91B2972496CA2C0055379E /* CategoryCollectionCell.xib */; };
 		2AABCF8924945FAB0087A823 /* NetworkDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */; };
 		2AABCF8A24945FAB0087A823 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */; };
 		2AABCF8B24945FAB0087A823 /* RequestEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */; };
@@ -249,6 +251,8 @@
 		2A2D8D0A249669F000819876 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		2A2D8D0B249669F000819876 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		2A2D8D152496857500819876 /* QRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
+		2A91B2962496CA2C0055379E /* CategoryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionCell.swift; sourceTree = "<group>"; };
+		2A91B2972496CA2C0055379E /* CategoryCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionCell.xib; sourceTree = "<group>"; };
 		2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDAO.swift; sourceTree = "<group>"; };
 		2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEncodable.swift; sourceTree = "<group>"; };
@@ -559,6 +563,15 @@
 			path = QRScanViewController;
 			sourceTree = "<group>";
 		};
+		2A91B2952496CA150055379E /* CategoryCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				2A91B2962496CA2C0055379E /* CategoryCollectionCell.swift */,
+				2A91B2972496CA2C0055379E /* CategoryCollectionCell.xib */,
+			);
+			path = CategoryCollectionCell;
+			sourceTree = "<group>";
+		};
 		2AABCF7824945FAB0087A823 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -730,6 +743,7 @@
 		2AC670F02496ACC700A41FF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A91B2952496CA150055379E /* CategoryCollectionCell */,
 				2AC670FB2496BA6800A41FF4 /* TextCell */,
 				2AC670F62496AEAD00A41FF4 /* DetailCell */,
 				2AC670F12496ACD200A41FF4 /* ImageCell */,
@@ -1018,6 +1032,7 @@
 				2A2D8CDC2495DAC700819876 /* TextCell.xib in Resources */,
 				2AF79F3F24945BDF00DFBD6A /* Icons.xcassets in Resources */,
 				2AC671032496BADE00A41FF4 /* LabelCell.xib in Resources */,
+				2A91B2992496CA2C0055379E /* CategoryCollectionCell.xib in Resources */,
 				2A2D8CC82495CEF900819876 /* CategoryCell.xib in Resources */,
 				2AF79F0E2494590900DFBD6A /* Main.storyboard in Resources */,
 				2A0ED2EA249574030042ACE8 /* Wallet.storyboard in Resources */,
@@ -1157,6 +1172,7 @@
 				2AABCFB324945FF70087A823 /* UICollectionView+BackgroundActivity.swift in Sources */,
 				2A0ED2FB24957BBF0042ACE8 /* MapViewController+User.swift in Sources */,
 				2A2D8CE02495DFBE00819876 /* FacilityCategory.swift in Sources */,
+				2A91B2982496CA2C0055379E /* CategoryCollectionCell.swift in Sources */,
 				2A0ED2CC24951C2A0042ACE8 /* MKMapView+drawRoute.swift in Sources */,
 				2AABCFCB2494613E0087A823 /* UITextField+Padding.swift in Sources */,
 				2AF79F092494590900DFBD6A /* SceneDelegate.swift in Sources */,

@@ -16,6 +16,7 @@ extension FacilityViewController {
         collectionView.register(nibClass: ImageCell.self)
         collectionView.register(nibClass: DetailCell.self)
         collectionView.register(nibClass: LabelCell.self)
+        collectionView.register(nibClass: CategoryCollectionCell.self)
         
     }
 }
@@ -23,11 +24,25 @@ extension FacilityViewController {
 extension FacilityViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        
+        switch section {
+            case 0..<2:
+                return 3
+            
+            case 2:
+                if let numberOfItems = facility?.category.count, numberOfItems > 0 {
+                    return numberOfItems + 1
+                }
+                
+            return 0
+            
+            default:
+                return 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -72,14 +87,14 @@ extension FacilityViewController: UICollectionViewDataSource {
                 case 2:
                     cell = collectionView.dequeueReusableCell(withReuseIdentifier: LabelCell.identifier, for: indexPath)
                     if let labelCell = cell as? LabelCell, let facility = facility {
-                        labelCell.configure(text: facility.description, alignment: .center, width: width)
+                        labelCell.configure(text: facility.description, bold: false, alignment: .center, width: width)
                 }
                 
                 default:
                     cell = UICollectionViewCell()
             }
             
-        } else {
+        } else if indexPath.section == 1 {
             
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: LabelCell.identifier, for: indexPath)
             
@@ -103,8 +118,29 @@ extension FacilityViewController: UICollectionViewDataSource {
                     text = facility.phone
                 }
                 
-                labelCell.configure(headText: headText, text: text, alignment: .natural, width: width)
+                labelCell.configure(headText: headText, text: text, bold: false, alignment: .natural, width: width)
             }
+            
+        } else {
+            
+            if indexPath.row == 0 {
+                
+                cell = collectionView.dequeueReusableCell(withReuseIdentifier: LabelCell.identifier, for: indexPath)
+                
+                if let labelCell = cell as? LabelCell {
+                    labelCell.configure(text: "Aqui você também encontra", bold: true, alignment: .natural, width: width)
+                    labelCell.label.font = UIFont.AppFonts.boldAppFont(withTextStyle: .headline)
+                }
+                
+            } else {
+                
+                cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionCell.identifier, for: indexPath)
+                
+                if let categoryCell = cell as? CategoryCollectionCell, let facility = facility {
+                    categoryCell.configure(title: facility.category[indexPath.row - 1].rawValue)
+                }
+            }
+            
         }
         
         return cell

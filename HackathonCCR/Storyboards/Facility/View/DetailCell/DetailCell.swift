@@ -15,6 +15,7 @@ class DetailCell: UICollectionViewCell {
     @IBOutlet weak var ratingIcon: UIImageView!
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var verifiedFacility: UIView!
+    @IBOutlet weak var verifiedLabel: UILabel!
     
     @IBOutlet weak var wdithConstraint: NSLayoutConstraint!
     
@@ -23,6 +24,8 @@ class DetailCell: UICollectionViewCell {
         centerImageView.image = image
         
         ratingLabel.text = rating
+        
+        verifiedLabel.font = UIFont.AppFonts.boldAppFont(withTextStyle: .caption2)
         
         if let rating = rating {
             self.ratingLabel.text = rating

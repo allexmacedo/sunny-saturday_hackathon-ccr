@@ -127,6 +127,7 @@
                 <outlet property="ratingIcon" destination="wzG-Zw-uWQ" id="o6K-vA-yMN"/>
                 <outlet property="ratingLabel" destination="Ksn-3i-dTY" id="vtL-56-VfP"/>
                 <outlet property="verifiedFacility" destination="SIr-p6-223" id="A6I-Lc-wqg"/>
+                <outlet property="verifiedLabel" destination="wnr-rn-Xz3" id="MPq-ev-ZIh"/>
                 <outlet property="wdithConstraint" destination="5sd-a0-kTM" id="dQE-4C-Dg8"/>
             </connections>
             <point key="canvasLocation" x="-117.39130434782609" y="-152.34375"/>

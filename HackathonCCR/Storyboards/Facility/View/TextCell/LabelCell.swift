@@ -13,7 +13,7 @@ class LabelCell: UICollectionViewCell {
     @IBOutlet weak var widthConstraint: NSLayoutConstraint!
     @IBOutlet weak var label: UILabel!
     
-    func configure(headText: String? = nil, text: String, alignment: NSTextAlignment, width: CGFloat) {
+    func configure(headText: String? = nil, text: String, bold: Bool, alignment: NSTextAlignment, width: CGFloat) {
         
         self.widthConstraint.constant = width
         
@@ -21,7 +21,7 @@ class LabelCell: UICollectionViewCell {
         
         let textStyle = UIFont.TextStyle.subheadline
         
-        let font = UIFont.AppFonts.appFont(withTextStyle: textStyle)
+        let font = bold ? UIFont.AppFonts.boldAppFont(withTextStyle: textStyle) : UIFont.AppFonts.appFont(withTextStyle: textStyle)
         
         self.label.font = font
         
