@@ -17,6 +17,9 @@ extension FacilityViewController {
         collectionView.register(nibClass: DetailCell.self)
         collectionView.register(nibClass: LabelCell.self)
         collectionView.register(nibClass: CategoryCollectionCell.self)
+        collectionView.register(nibClass: ButtonCell.self)
+        
+        self.collectionView.contentInset = UIEdgeInsets(top: .zero, left: .zero, bottom: 16, right: .zero)
         
     }
 }
@@ -35,7 +38,7 @@ extension FacilityViewController: UICollectionViewDataSource {
             
             case 2:
                 if let numberOfItems = facility?.category.count, numberOfItems > 0 {
-                    return numberOfItems + 1
+                    return numberOfItems + 2
                 }
                 
             return 0
@@ -130,6 +133,14 @@ extension FacilityViewController: UICollectionViewDataSource {
                 if let labelCell = cell as? LabelCell {
                     labelCell.configure(text: "Aqui você também encontra", bold: true, alignment: .natural, width: width)
                     labelCell.label.font = UIFont.AppFonts.boldAppFont(withTextStyle: .headline)
+                }
+                
+            } else if let facility = facility, indexPath.row == facility.category.count + 1 {
+                
+                cell = collectionView.dequeueReusableCell(withReuseIdentifier: ButtonCell.identifier, for: indexPath)
+                
+                if let buttonCell = cell as? ButtonCell {
+                    buttonCell.configure(title: "Fazer uma avaliação", width: width)
                 }
                 
             } else {

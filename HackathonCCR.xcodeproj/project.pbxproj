@@ -123,6 +123,8 @@
 		2A2D8D182496857500819876 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8D152496857500819876 /* QRScanViewController.swift */; };
 		2A91B2982496CA2C0055379E /* CategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91B2962496CA2C0055379E /* CategoryCollectionCell.swift */; };
 		2A91B2992496CA2C0055379E /* CategoryCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A91B2972496CA2C0055379E /* CategoryCollectionCell.xib */; };
+		2A91B29D2496CE8A0055379E /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91B29B2496CE8A0055379E /* ButtonCell.swift */; };
+		2A91B29E2496CE8A0055379E /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A91B29C2496CE8A0055379E /* ButtonCell.xib */; };
 		2AABCF8924945FAB0087A823 /* NetworkDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */; };
 		2AABCF8A24945FAB0087A823 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */; };
 		2AABCF8B24945FAB0087A823 /* RequestEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */; };
@@ -253,6 +255,8 @@
 		2A2D8D152496857500819876 /* QRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
 		2A91B2962496CA2C0055379E /* CategoryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionCell.swift; sourceTree = "<group>"; };
 		2A91B2972496CA2C0055379E /* CategoryCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionCell.xib; sourceTree = "<group>"; };
+		2A91B29B2496CE8A0055379E /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		2A91B29C2496CE8A0055379E /* ButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
 		2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDAO.swift; sourceTree = "<group>"; };
 		2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEncodable.swift; sourceTree = "<group>"; };
@@ -572,6 +576,15 @@
 			path = CategoryCollectionCell;
 			sourceTree = "<group>";
 		};
+		2A91B29A2496CE750055379E /* ButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				2A91B29B2496CE8A0055379E /* ButtonCell.swift */,
+				2A91B29C2496CE8A0055379E /* ButtonCell.xib */,
+			);
+			path = ButtonCell;
+			sourceTree = "<group>";
+		};
 		2AABCF7824945FAB0087A823 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -743,6 +756,7 @@
 		2AC670F02496ACC700A41FF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A91B29A2496CE750055379E /* ButtonCell */,
 				2A91B2952496CA150055379E /* CategoryCollectionCell */,
 				2AC670FB2496BA6800A41FF4 /* TextCell */,
 				2AC670F62496AEAD00A41FF4 /* DetailCell */,
@@ -1037,6 +1051,7 @@
 				2AF79F0E2494590900DFBD6A /* Main.storyboard in Resources */,
 				2A0ED2EA249574030042ACE8 /* Wallet.storyboard in Resources */,
 				2A2D8C9A2495BCB600819876 /* Facility.storyboard in Resources */,
+				2A91B29E2496CE8A0055379E /* ButtonCell.xib in Resources */,
 				2A2D8CF32495F4A900819876 /* FacilityCell.xib in Resources */,
 				2A2D8CA32495C5B000819876 /* Login.storyboard in Resources */,
 			);
@@ -1120,6 +1135,7 @@
 				2A09C42024948B8D008B3CAD /* GeocodingDAO.swift in Sources */,
 				2AC671022496BADE00A41FF4 /* LabelCell.swift in Sources */,
 				2AABCF9324945FAB0087A823 /* Router.swift in Sources */,
+				2A91B29D2496CE8A0055379E /* ButtonCell.swift in Sources */,
 				2A09C41524948A52008B3CAD /* LocationDAO+LocationDataStore.swift in Sources */,
 				2AABCF8924945FAB0087A823 /* NetworkDAO.swift in Sources */,
 				2AABCFCF249461990087A823 /* Date+dateRanges.swift in Sources */,

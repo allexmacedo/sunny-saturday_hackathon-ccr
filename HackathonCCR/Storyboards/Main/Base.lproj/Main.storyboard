@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7sa-yq-gVE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +10,7 @@
         <!--Main Tab Controller-->
         <scene sceneID="UnA-L4-xjC">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7sa-yq-gVE" customClass="MainTabController" customModule="HackathonCCR" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7sa-yq-gVE" customClass="MainTabController" customModule="HackathonCCRTests" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uBb-eF-PIi">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -24,7 +23,6 @@
                         <segue destination="nHi-RW-UsN" kind="relationship" relationship="viewControllers" id="tL6-ub-DMq"/>
                         <segue destination="tmE-65-i2g" kind="relationship" relationship="viewControllers" id="LUT-9v-8tS"/>
                         <segue destination="g7K-8r-s9Z" kind="relationship" relationship="viewControllers" id="feQ-eM-6Rc"/>
-                        <segue destination="zAI-uM-Bzs" kind="relationship" relationship="viewControllers" id="b5n-hX-pzw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNZ-zj-ODe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -49,7 +47,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6wN-Zm-fM6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-156" y="31"/>
+            <point key="canvasLocation" x="-167" y="64"/>
         </scene>
         <!--Map-->
         <scene sceneID="NYz-t5-8QQ">
@@ -59,7 +57,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XD1-ZH-NJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-175" y="106"/>
+            <point key="canvasLocation" x="-180" y="181"/>
         </scene>
         <!--Wallet-->
         <scene sceneID="TGI-fE-c4z">
@@ -69,23 +67,13 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ddh-m3-2do" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-167" y="198"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="mpD-9o-pHp">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="zAI-uM-Bzs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="MKd-00-KPO"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mc1-VM-0Mk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-165" y="297"/>
+            <point key="canvasLocation" x="-170" y="280"/>
         </scene>
     </scenes>
     <color key="tintColor" name="Green"/>
     <resources>
         <namedColor name="Green">
-            <color red="0.1478357911" green="0.83092874289999996" blue="0.39991950990000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.042949885129999997" green="0.65789783000000002" blue="0.26658186319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
