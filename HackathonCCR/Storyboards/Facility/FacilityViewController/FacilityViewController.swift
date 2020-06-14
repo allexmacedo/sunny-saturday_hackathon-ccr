@@ -12,12 +12,16 @@ class FacilityViewController: UIViewController {
     
     var facility: CommercialFacility?
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         self.title = facility?.name
+        
+        configureCollectionView()
     }
     
 }

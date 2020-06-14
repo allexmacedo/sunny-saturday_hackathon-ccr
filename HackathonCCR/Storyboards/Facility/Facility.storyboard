@@ -14,13 +14,54 @@
                     <view key="view" contentMode="scaleToFill" id="SVR-Fw-yWG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dDf-3P-RYV">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="po1-q7-xbC">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dDf-3P-RYV" firstAttribute="top" secondItem="HYK-SW-CAK" secondAttribute="top" id="e4p-Qj-4HS"/>
+                            <constraint firstItem="HYK-SW-CAK" firstAttribute="trailing" secondItem="dDf-3P-RYV" secondAttribute="trailing" id="g9M-KC-nVq"/>
+                            <constraint firstItem="dDf-3P-RYV" firstAttribute="leading" secondItem="HYK-SW-CAK" secondAttribute="leading" id="iWy-HP-LLI"/>
+                            <constraint firstAttribute="bottom" secondItem="dDf-3P-RYV" secondAttribute="bottom" id="zJG-TI-rtt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="HYK-SW-CAK"/>
                     </view>
+                    <navigationItem key="navigationItem" id="u1K-V6-fnl"/>
+                    <connections>
+                        <outlet property="collectionView" destination="dDf-3P-RYV" id="8u3-qB-Wck"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xf0-rh-VfW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-459" y="82"/>
+            <point key="canvasLocation" x="448" y="64"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kA9-ce-bmU">
+            <objects>
+                <navigationController storyboardIdentifier="FacilityNavigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0jI-Gs-VcU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wai-Jq-LzL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ltp-9c-DNm" kind="relationship" relationship="rootViewController" id="MS3-qT-inZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u4O-KP-jKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="64"/>
         </scene>
     </scenes>
 </document>
