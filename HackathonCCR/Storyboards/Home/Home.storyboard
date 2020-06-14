@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bTx-JV-iWc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="58X-aJ-V4y">
+            <objects>
+                <viewController id="8J8-DQ-Tpp" customClass="HomeViewController" customModule="HackathonCCRTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Hz-IK-XEi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W8z-pD-bge">
+                                <rect key="frame" x="0.0" y="122" width="414" height="774"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sYX-ep-nny" firstAttribute="trailing" secondItem="W8z-pD-bge" secondAttribute="trailing" id="2LG-yN-5Bn"/>
+                            <constraint firstAttribute="bottom" secondItem="W8z-pD-bge" secondAttribute="bottom" id="5NP-zv-daS"/>
+                            <constraint firstItem="W8z-pD-bge" firstAttribute="top" secondItem="sYX-ep-nny" secondAttribute="top" id="7JI-I2-5Oi"/>
+                            <constraint firstItem="W8z-pD-bge" firstAttribute="leading" secondItem="sYX-ep-nny" secondAttribute="leading" id="88q-4i-jPI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sYX-ep-nny"/>
+                    </view>
+                    <navigationItem key="navigationItem" prompt=" " id="m2K-FZ-DzR"/>
+                    <connections>
+                        <outlet property="tableView" destination="W8z-pD-bge" id="vzB-3x-G4Y"/>
+                        <segue destination="9Pa-Zi-5qI" kind="presentation" identifier="qrScan" id="Zt2-lt-2sg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Br2-Hd-sfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884.05797101449286" y="182.8125"/>
+        </scene>
+        <!--Scan View Controller-->
+        <scene sceneID="Fjf-eC-8yf">
+            <objects>
+                <viewController id="Ymj-eq-sZU" customClass="QRScanViewController" customModule="HackathonCCRTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7SD-u1-jGp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JV9-un-XyS" customClass="QRCodeView" customModule="HackathonCCRTests" customModuleProvider="target">
+                                <rect key="frame" x="62" y="276" width="290" height="290"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JV9-un-XyS" secondAttribute="height" multiplier="1:1" id="XaZ-gP-7BD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JV9-un-XyS" firstAttribute="width" secondItem="7SD-u1-jGp" secondAttribute="width" multiplier="0.7" id="4e8-eL-w1N"/>
+                            <constraint firstItem="JV9-un-XyS" firstAttribute="centerX" secondItem="7SD-u1-jGp" secondAttribute="centerX" id="Q6f-up-GLl"/>
+                            <constraint firstItem="JV9-un-XyS" firstAttribute="centerY" secondItem="7SD-u1-jGp" secondAttribute="centerY" id="dT0-IX-y7u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6hw-Hm-6Kl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dgZ-9M-tmO">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="CME-aV-QaH">
+                            <connections>
+                                <action selector="handleCancel:" destination="Ymj-eq-sZU" id="D7k-KN-qAF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="qrCodeView" destination="JV9-un-XyS" id="hB8-Vz-SBd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LLw-jp-na0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2558" y="-561"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="lDM-A2-e4V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bTx-JV-iWc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" id="Lgb-Jk-nUR"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Ld-Ag-yK7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8J8-DQ-Tpp" kind="relationship" relationship="rootViewController" id="SvI-sY-rg4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rE7-su-aVY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="182.8125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xBd-xP-m12">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Pa-Zi-5qI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eAN-On-Bl2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ymj-eq-sZU" kind="relationship" relationship="rootViewController" id="ch4-P4-1sF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5F-zj-hFh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="-561"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="Green"/>
+    <resources>
+        <namedColor name="Green">
+            <color red="0.14499999582767487" green="0.82700002193450928" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -49,11 +49,11 @@
             </objects>
             <point key="canvasLocation" x="1018" y="196"/>
         </scene>
-        <!--Item-->
+        <!--Mapa-->
         <scene sceneID="l4z-dG-FFV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VMn-wV-s3I" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jEE-k4-YR2"/>
+                    <tabBarItem key="tabBarItem" title="Mapa" id="jEE-k4-YR2"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JDf-Xc-Wnd">
@@ -70,4 +70,10 @@
             <point key="canvasLocation" x="-778.26086956521749" y="195.53571428571428"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="Green"/>
+    <resources>
+        <namedColor name="Green">
+            <color red="0.1478357911" green="0.83092874289999996" blue="0.39991950990000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
 </document>

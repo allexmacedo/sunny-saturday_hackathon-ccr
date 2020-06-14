@@ -23,11 +23,11 @@
             </objects>
             <point key="canvasLocation" x="1171.0144927536232" y="39.508928571428569"/>
         </scene>
-        <!--Item-->
+        <!--Ajustes-->
         <scene sceneID="agj-go-KV7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hV1-Y3-pA3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ofr-d1-old"/>
+                    <tabBarItem key="tabBarItem" title="Ajustes" id="ofr-d1-old"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wvp-Gd-UZ9">
@@ -44,4 +44,10 @@
             <point key="canvasLocation" x="260.86956521739131" y="39.508928571428569"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="Green"/>
+    <resources>
+        <namedColor name="Green">
+            <color red="0.1478357911" green="0.83092874289999996" blue="0.39991950990000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
 </document>
