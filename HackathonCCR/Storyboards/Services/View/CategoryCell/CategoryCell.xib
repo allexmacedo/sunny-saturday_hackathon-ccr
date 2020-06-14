@@ -27,7 +27,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="uSB-co-vSD">
-                                <rect key="frame" x="8" y="16" width="370" height="112"/>
+                                <rect key="frame" x="16" y="16" width="362" height="112"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F8p-kS-gLO">
                                         <rect key="frame" x="0.0" y="5" width="102" height="102"/>
@@ -36,13 +36,13 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSA-Ao-kFK">
-                                        <rect key="frame" x="118" y="11" width="224" height="90"/>
+                                        <rect key="frame" x="118" y="11" width="216" height="90"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="251" image="selectItem" translatesAutoresizingMaskIntoConstraints="NO" id="SAE-W3-Sk3">
-                                        <rect key="frame" x="358" y="52" width="12" height="8"/>
+                                        <rect key="frame" x="350" y="52" width="12" height="8"/>
                                         <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="8" id="2gA-Yd-0dB"/>
@@ -61,7 +61,7 @@
                             <constraint firstItem="P5J-4v-eOE" firstAttribute="leading" secondItem="c8R-on-e75" secondAttribute="leading" constant="8" id="J2s-nj-Eh1"/>
                             <constraint firstAttribute="trailing" secondItem="uSB-co-vSD" secondAttribute="trailing" constant="16" id="MXD-xv-RUs"/>
                             <constraint firstItem="uSB-co-vSD" firstAttribute="top" secondItem="c8R-on-e75" secondAttribute="top" constant="16" id="PPr-y5-igZ"/>
-                            <constraint firstItem="uSB-co-vSD" firstAttribute="leading" secondItem="c8R-on-e75" secondAttribute="leading" constant="8" id="cTU-jC-zgL"/>
+                            <constraint firstItem="uSB-co-vSD" firstAttribute="leading" secondItem="c8R-on-e75" secondAttribute="leading" constant="16" id="cTU-jC-zgL"/>
                             <constraint firstAttribute="bottom" secondItem="P5J-4v-eOE" secondAttribute="bottom" id="xZO-r6-eAD"/>
                         </constraints>
                     </view>

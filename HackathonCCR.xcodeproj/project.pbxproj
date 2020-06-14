@@ -77,6 +77,15 @@
 		2A2D8CCE2495D14D00819876 /* CategoriesViewController+tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CCD2495D14D00819876 /* CategoriesViewController+tableView.swift */; };
 		2A2D8CCF2495D14D00819876 /* CategoriesViewController+tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CCD2495D14D00819876 /* CategoriesViewController+tableView.swift */; };
 		2A2D8CD02495D14D00819876 /* CategoriesViewController+tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CCD2495D14D00819876 /* CategoriesViewController+tableView.swift */; };
+		2A2D8CD92495DAC700819876 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CD72495DAC700819876 /* TextCell.swift */; };
+		2A2D8CDA2495DAC700819876 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CD72495DAC700819876 /* TextCell.swift */; };
+		2A2D8CDB2495DAC700819876 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CD72495DAC700819876 /* TextCell.swift */; };
+		2A2D8CDC2495DAC700819876 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8CD82495DAC700819876 /* TextCell.xib */; };
+		2A2D8CDD2495DAC700819876 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8CD82495DAC700819876 /* TextCell.xib */; };
+		2A2D8CDE2495DAC700819876 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8CD82495DAC700819876 /* TextCell.xib */; };
+		2A2D8CE02495DFBE00819876 /* FacilityCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CDF2495DFBE00819876 /* FacilityCategory.swift */; };
+		2A2D8CE12495DFBE00819876 /* FacilityCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CDF2495DFBE00819876 /* FacilityCategory.swift */; };
+		2A2D8CE22495DFBE00819876 /* FacilityCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CDF2495DFBE00819876 /* FacilityCategory.swift */; };
 		2AABCF8924945FAB0087A823 /* NetworkDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */; };
 		2AABCF8A24945FAB0087A823 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */; };
 		2AABCF8B24945FAB0087A823 /* RequestEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */; };
@@ -173,6 +182,9 @@
 		2A2D8CC32495CEF900819876 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		2A2D8CC42495CEF900819876 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		2A2D8CCD2495D14D00819876 /* CategoriesViewController+tableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoriesViewController+tableView.swift"; sourceTree = "<group>"; };
+		2A2D8CD72495DAC700819876 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		2A2D8CD82495DAC700819876 /* TextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
+		2A2D8CDF2495DFBE00819876 /* FacilityCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityCategory.swift; sourceTree = "<group>"; };
 		2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDAO.swift; sourceTree = "<group>"; };
 		2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEncodable.swift; sourceTree = "<group>"; };
@@ -369,6 +381,7 @@
 		2A2D8CC22495CEDD00819876 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A2D8CD62495DAB200819876 /* TextCell */,
 				2A2D8CCB2495CEFC00819876 /* CategoryCell */,
 			);
 			path = View;
@@ -390,6 +403,15 @@
 				2A2D8CCD2495D14D00819876 /* CategoriesViewController+tableView.swift */,
 			);
 			path = CategoriesViewController;
+			sourceTree = "<group>";
+		};
+		2A2D8CD62495DAB200819876 /* TextCell */ = {
+			isa = PBXGroup;
+			children = (
+				2A2D8CD72495DAC700819876 /* TextCell.swift */,
+				2A2D8CD82495DAC700819876 /* TextCell.xib */,
+			);
+			path = TextCell;
 			sourceTree = "<group>";
 		};
 		2AABCF7824945FAB0087A823 /* Network */ = {
@@ -538,6 +560,7 @@
 			children = (
 				2AABCFD324947BDE0087A823 /* CommercialFacility.swift */,
 				2A09C42324948CF1008B3CAD /* LocationModel.swift */,
+				2A2D8CDF2495DFBE00819876 /* FacilityCategory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -785,6 +808,7 @@
 				2A0ED2DD24956B520042ACE8 /* Services.storyboard in Resources */,
 				2AF79F4124945BF300DFBD6A /* Images.xcassets in Resources */,
 				2AF79F132494590C00DFBD6A /* LaunchScreen.storyboard in Resources */,
+				2A2D8CDC2495DAC700819876 /* TextCell.xib in Resources */,
 				2AF79F3F24945BDF00DFBD6A /* Icons.xcassets in Resources */,
 				2A2D8CC82495CEF900819876 /* CategoryCell.xib in Resources */,
 				2AF79F0E2494590900DFBD6A /* Main.storyboard in Resources */,
@@ -800,6 +824,7 @@
 			files = (
 				2A0ED2E624956B650042ACE8 /* Profile.storyboard in Resources */,
 				2A2D8CC92495CEF900819876 /* CategoryCell.xib in Resources */,
+				2A2D8CDD2495DAC700819876 /* TextCell.xib in Resources */,
 				2A0ED2EB249574030042ACE8 /* Wallet.storyboard in Resources */,
 				2A2D8CA42495C5B000819876 /* Login.storyboard in Resources */,
 				2A0ED2DE24956B520042ACE8 /* Services.storyboard in Resources */,
@@ -814,6 +839,7 @@
 			files = (
 				2A0ED2E724956B650042ACE8 /* Profile.storyboard in Resources */,
 				2A2D8CCA2495CEF900819876 /* CategoryCell.xib in Resources */,
+				2A2D8CDE2495DAC700819876 /* TextCell.xib in Resources */,
 				2A0ED2EC249574030042ACE8 /* Wallet.storyboard in Resources */,
 				2A2D8CA52495C5B000819876 /* Login.storyboard in Resources */,
 				2A0ED2DF24956B520042ACE8 /* Services.storyboard in Resources */,
@@ -868,6 +894,7 @@
 				2A0ED2EE249578D00042ACE8 /* MapViewController.swift in Sources */,
 				2AABCFDB249486F90087A823 /* CommercialFacilityAnnotation.swift in Sources */,
 				2A0ED2D124952D420042ACE8 /* DateComponentsFormatter+AppFormatter.swift in Sources */,
+				2A2D8CD92495DAC700819876 /* TextCell.swift in Sources */,
 				2AABCF8E24945FAB0087A823 /* HTTPTask.swift in Sources */,
 				2AABCFBE24945FF70087A823 /* String+Regex.swift in Sources */,
 				2AABCFD424947BDE0087A823 /* CommercialFacility.swift in Sources */,
@@ -896,6 +923,7 @@
 				2AABCFC224945FF70087A823 /* UIViewController+presentAlert.swift in Sources */,
 				2AABCFB324945FF70087A823 /* UICollectionView+BackgroundActivity.swift in Sources */,
 				2A0ED2FB24957BBF0042ACE8 /* MapViewController+User.swift in Sources */,
+				2A2D8CE02495DFBE00819876 /* FacilityCategory.swift in Sources */,
 				2A0ED2CC24951C2A0042ACE8 /* MKMapView+drawRoute.swift in Sources */,
 				2AABCFCB2494613E0087A823 /* UITextField+Padding.swift in Sources */,
 				2AF79F092494590900DFBD6A /* SceneDelegate.swift in Sources */,
@@ -916,6 +944,8 @@
 				2A09C4272495137D008B3CAD /* DirectionsDAO.swift in Sources */,
 				2AF79F4B24945E0C00DFBD6A /* MeasurementFormatter+AppFormatters.swift in Sources */,
 				2A0ED2D224952D420042ACE8 /* DateComponentsFormatter+AppFormatter.swift in Sources */,
+				2A2D8CDA2495DAC700819876 /* TextCell.swift in Sources */,
+				2A2D8CE12495DFBE00819876 /* FacilityCategory.swift in Sources */,
 				2A2D8CCF2495D14D00819876 /* CategoriesViewController+tableView.swift in Sources */,
 				2A0ED2EF249578D00042ACE8 /* MapViewController.swift in Sources */,
 				2AABCFD524947BDE0087A823 /* CommercialFacility.swift in Sources */,
@@ -944,6 +974,8 @@
 				2A09C4282495137D008B3CAD /* DirectionsDAO.swift in Sources */,
 				2AF79F4C24945E0C00DFBD6A /* MeasurementFormatter+AppFormatters.swift in Sources */,
 				2A0ED2D324952D420042ACE8 /* DateComponentsFormatter+AppFormatter.swift in Sources */,
+				2A2D8CDB2495DAC700819876 /* TextCell.swift in Sources */,
+				2A2D8CE22495DFBE00819876 /* FacilityCategory.swift in Sources */,
 				2A2D8CD02495D14D00819876 /* CategoriesViewController+tableView.swift in Sources */,
 				2A0ED2F0249578D00042ACE8 /* MapViewController.swift in Sources */,
 				2AABCFD624947BDE0087A823 /* CommercialFacility.swift in Sources */,

@@ -44,6 +44,5 @@ class CategoryCell: UITableViewCell {
             
             self.mockSeparator.isHidden = true
         }
-        
     }
 }

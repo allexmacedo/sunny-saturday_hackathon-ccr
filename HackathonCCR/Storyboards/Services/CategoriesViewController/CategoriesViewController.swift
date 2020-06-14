@@ -12,8 +12,10 @@ class CategoriesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var categories = FacilityCategory.allCases.sorted {$0.rawValue < $1.rawValue}
+    
     var numberOfItems: Int {
-        return 5
+        return categories.count
     }
     
     override func viewDidLoad() {

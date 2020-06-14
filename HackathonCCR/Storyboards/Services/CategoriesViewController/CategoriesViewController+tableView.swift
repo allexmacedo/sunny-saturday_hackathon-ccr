@@ -11,6 +11,7 @@ extension CategoriesViewController {
     
     func configureTableView() {
         tableView.register(nibClass: CategoryCell.self)
+        tableView.register(nibClass: TextCell.self)
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -20,19 +21,33 @@ extension CategoriesViewController {
 extension CategoriesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return numberOfItems
+        return FacilityCategory.allCases.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: UITableViewCell
         
-        cell = tableView.dequeueReusableCell(withIdentifier: CategoryCell.identifier, for: indexPath)
-        
-        if let cell = cell as? CategoryCell {
-            cell.configure(image: nil, text: "Categoria", first: indexPath.row == 0, last: indexPath.row == numberOfItems - 1)
+        if indexPath.row == 0 {
+            cell = tableView.dequeueReusableCell(withIdentifier: TextCell.identifier, for: indexPath)
+            
+            if let headerCell = cell as? TextCell {
+                headerCell.configure(text: "Categorias")
+            }
+            
+        } else {
+            
+            cell = tableView.dequeueReusableCell(withIdentifier: CategoryCell.identifier, for: indexPath)
+            
+            if let categoryCell = cell as? CategoryCell {
+                let text = categories[indexPath.row - 1].rawValue
+                
+                categoryCell.configure(image: nil, text: text, first: indexPath.row == 1, last: indexPath.row == numberOfItems)
+            }
         }
         
+        cell.selectionStyle = .none
+
         return cell
     }
 }
