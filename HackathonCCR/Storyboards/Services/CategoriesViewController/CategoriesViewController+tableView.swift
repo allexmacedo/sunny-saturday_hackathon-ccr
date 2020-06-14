@@ -32,7 +32,7 @@ extension CategoriesViewController: UITableViewDataSource {
             cell = tableView.dequeueReusableCell(withIdentifier: TextCell.identifier, for: indexPath)
             
             if let headerCell = cell as? TextCell {
-                headerCell.configure(text: "Categorias")
+                headerCell.configure(text: "Categorias", textStyle: .title2)
             }
             
         } else {

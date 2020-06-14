@@ -12,8 +12,8 @@ class TextCell: UITableViewCell {
 
     @IBOutlet weak var label: UILabel!
    
-    func configure(text: String?) {
+    func configure(text: String?, textStyle: UIFont.TextStyle) {
         self.label.text = text
-        self.label.font = UIFont.AppFonts.boldAppFont(withTextStyle: .title2)
+        self.label.font = UIFont.AppFonts.boldAppFont(withTextStyle: textStyle)
     }
 }

@@ -49,11 +49,11 @@
             </objects>
             <point key="canvasLocation" x="1018" y="196"/>
         </scene>
-        <!--Item-->
+        <!--Mapa-->
         <scene sceneID="l4z-dG-FFV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VMn-wV-s3I" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jEE-k4-YR2"/>
+                    <tabBarItem key="tabBarItem" title="Mapa" id="jEE-k4-YR2"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JDf-Xc-Wnd">
