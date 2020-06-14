@@ -30,13 +30,13 @@
                                 <rect key="frame" x="16" y="16" width="362" height="112"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F8p-kS-gLO">
-                                        <rect key="frame" x="0.0" y="5" width="102" height="102"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="112" height="112"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="F8p-kS-gLO" secondAttribute="height" multiplier="1:1" id="Dq8-Ji-GZd"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSA-Ao-kFK">
-                                        <rect key="frame" x="118" y="11" width="216" height="90"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSA-Ao-kFK">
+                                        <rect key="frame" x="128" y="11" width="206" height="90"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

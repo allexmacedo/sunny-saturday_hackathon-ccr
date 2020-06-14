@@ -9,8 +9,11 @@
 import Foundation
 
 enum FacilityCategory: String, CaseIterable {
-    case resting = "Descanso"
-    case gas     = "Postos de gasolina"
-    case eating  = "Alimentação"
-    case repair  = "Oficinas"
+    case suport       = "Pontos de apoio da concessionária"
+    case hotels       = "Hotéis"
+    case resting      = "Pontos de descanso"
+    case gas          = "Postos de gasolina"
+    case restaurants  = "Restaurantes"
+    case repair       = "Mecânicas especializadas"
+    case services     = "Postos de serviços"
 }
