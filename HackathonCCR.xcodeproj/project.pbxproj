@@ -152,6 +152,16 @@
 		2AABCFDB249486F90087A823 /* CommercialFacilityAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCFDA249486F90087A823 /* CommercialFacilityAnnotation.swift */; };
 		2AABCFDC249486F90087A823 /* CommercialFacilityAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCFDA249486F90087A823 /* CommercialFacilityAnnotation.swift */; };
 		2AABCFDD249486F90087A823 /* CommercialFacilityAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCFDA249486F90087A823 /* CommercialFacilityAnnotation.swift */; };
+		2AE1691A249695710069E63D /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE16919249695710069E63D /* RoundedView.swift */; };
+		2AE1691E249697840069E63D /* FacilitiesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1691D249697840069E63D /* FacilitiesServices.swift */; };
+		2AE1691F249697840069E63D /* FacilitiesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1691D249697840069E63D /* FacilitiesServices.swift */; };
+		2AE16920249697840069E63D /* FacilitiesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1691D249697840069E63D /* FacilitiesServices.swift */; };
+		2AE16922249698520069E63D /* FacilitiesDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE16921249698520069E63D /* FacilitiesDAO.swift */; };
+		2AE16923249698520069E63D /* FacilitiesDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE16921249698520069E63D /* FacilitiesDAO.swift */; };
+		2AE16924249698520069E63D /* FacilitiesDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE16921249698520069E63D /* FacilitiesDAO.swift */; };
+		2AE1692724969CEB0069E63D /* LenghFormatter+appFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1692624969CEB0069E63D /* LenghFormatter+appFormatter.swift */; };
+		2AE1692824969CEB0069E63D /* LenghFormatter+appFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1692624969CEB0069E63D /* LenghFormatter+appFormatter.swift */; };
+		2AE1692924969CEB0069E63D /* LenghFormatter+appFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1692624969CEB0069E63D /* LenghFormatter+appFormatter.swift */; };
 		2AF79F072494590900DFBD6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF79F062494590900DFBD6A /* AppDelegate.swift */; };
 		2AF79F092494590900DFBD6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF79F082494590900DFBD6A /* SceneDelegate.swift */; };
 		2AF79F0E2494590900DFBD6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF79F0C2494590900DFBD6A /* Main.storyboard */; };
@@ -254,6 +264,10 @@
 		2AABCFCE249461990087A823 /* Date+dateRanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+dateRanges.swift"; sourceTree = "<group>"; };
 		2AABCFD324947BDE0087A823 /* CommercialFacility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommercialFacility.swift; sourceTree = "<group>"; };
 		2AABCFDA249486F90087A823 /* CommercialFacilityAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommercialFacilityAnnotation.swift; sourceTree = "<group>"; };
+		2AE16919249695710069E63D /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		2AE1691D249697840069E63D /* FacilitiesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesServices.swift; sourceTree = "<group>"; };
+		2AE16921249698520069E63D /* FacilitiesDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesDAO.swift; sourceTree = "<group>"; };
+		2AE1692624969CEB0069E63D /* LenghFormatter+appFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LenghFormatter+appFormatter.swift"; sourceTree = "<group>"; };
 		2AF79F032494590900DFBD6A /* reupi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reupi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF79F062494590900DFBD6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AF79F082494590900DFBD6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -315,6 +329,7 @@
 				2A09C40F24948A52008B3CAD /* LocationDAO */,
 				2A09C41F24948B8D008B3CAD /* GeocodingDAO.swift */,
 				2A09C4252495137D008B3CAD /* DirectionsDAO.swift */,
+				2AE16921249698520069E63D /* FacilitiesDAO.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -324,6 +339,7 @@
 			children = (
 				2A09C41C24948AEC008B3CAD /* Mechanism */,
 				2A09C41A24948ABD008B3CAD /* LocationServices.swift */,
+				2AE1691D249697840069E63D /* FacilitiesServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -684,6 +700,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		2AE1692524969CD00069E63D /* MKDistanceFormmater */ = {
+			isa = PBXGroup;
+			children = (
+				2AE1692624969CEB0069E63D /* LenghFormatter+appFormatter.swift */,
+			);
+			path = MKDistanceFormmater;
+			sourceTree = "<group>";
+		};
 		2AF79EFA2494590900DFBD6A = {
 			isa = PBXGroup;
 			children = (
@@ -752,6 +776,7 @@
 				2AF79F3A24945B8A00DFBD6A /* Colors */,
 				2AF79F3E24945BDF00DFBD6A /* Icons.xcassets */,
 				2AF79F4024945BF300DFBD6A /* Images.xcassets */,
+				2AE16919249695710069E63D /* RoundedView.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -794,6 +819,7 @@
 		2AF79F4424945C9E00DFBD6A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				2AE1692524969CD00069E63D /* MKDistanceFormmater */,
 				2A2D8CF62496621C00819876 /* Navigation Bar */,
 				2AABCF9724945FF70087A823 /* CollectionView */,
 				2AABCFC8249460DE0087A823 /* Date */,
@@ -892,10 +918,10 @@
 			};
 			buildConfigurationList = 2AF79EFE2494590900DFBD6A /* Build configuration list for PBXProject "HackathonCCR" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = pt;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				pt,
 				Base,
 			);
 			mainGroup = 2AF79EFA2494590900DFBD6A;
@@ -1003,6 +1029,7 @@
 				2AABCF8C24945FAB0087A823 /* URLParameterEncoder.swift in Sources */,
 				2A2D8D022496671600819876 /* HomeViewController.swift in Sources */,
 				2A2D8CF02495F4A900819876 /* FacilityCell.swift in Sources */,
+				2AE16922249698520069E63D /* FacilitiesDAO.swift in Sources */,
 				2AABCFB724945FF70087A823 /* UITextField+Height.swift in Sources */,
 				2AABCF8F24945FAB0087A823 /* HTTPMethod.swift in Sources */,
 				2A09C4262495137D008B3CAD /* DirectionsDAO.swift in Sources */,
@@ -1022,6 +1049,7 @@
 				2A0ED2D124952D420042ACE8 /* DateComponentsFormatter+AppFormatter.swift in Sources */,
 				2A2D8CD92495DAC700819876 /* TextCell.swift in Sources */,
 				2AABCF8E24945FAB0087A823 /* HTTPTask.swift in Sources */,
+				2AE1692724969CEB0069E63D /* LenghFormatter+appFormatter.swift in Sources */,
 				2AABCFBE24945FF70087A823 /* String+Regex.swift in Sources */,
 				2AABCFD424947BDE0087A823 /* CommercialFacility.swift in Sources */,
 				2A2D8CE52495E59F00819876 /* CommercialFacilityViewController.swift in Sources */,
@@ -1031,7 +1059,9 @@
 				2A09C41424948A52008B3CAD /* LocationDAO.swift in Sources */,
 				2A0ED2F724957B130042ACE8 /* MapViewController+MapDelegate.swift in Sources */,
 				2A2D8D062496692A00819876 /* HomeViewController+tableView.swift in Sources */,
+				2AE1691A249695710069E63D /* RoundedView.swift in Sources */,
 				2AABCF9024945FAB0087A823 /* EndPointType.swift in Sources */,
+				2AE1691E249697840069E63D /* FacilitiesServices.swift in Sources */,
 				2AABCFC324945FF70087A823 /* UITableView+RegisterNib.swift in Sources */,
 				2A0ED2D62495435E0042ACE8 /* QRCodeView.swift in Sources */,
 				2AABCF8B24945FAB0087A823 /* RequestEncodable.swift in Sources */,
@@ -1070,6 +1100,7 @@
 				2A2D8CC02495CE6200819876 /* CategoriesViewController.swift in Sources */,
 				2A2D8CE62495E59F00819876 /* CommercialFacilityViewController.swift in Sources */,
 				2A2D8D072496692A00819876 /* HomeViewController+tableView.swift in Sources */,
+				2AE16923249698520069E63D /* FacilitiesDAO.swift in Sources */,
 				2A2D8CEA2495F41A00819876 /* CommercialFacilityViewController+tableView.swift in Sources */,
 				2A2D8CF92496623400819876 /* UINavigationBar+Size.swift in Sources */,
 				2A2D8D0D249669F000819876 /* CardCell.swift in Sources */,
@@ -1086,6 +1117,7 @@
 				2A2D8CE12495DFBE00819876 /* FacilityCategory.swift in Sources */,
 				2A2D8CF12495F4A900819876 /* FacilityCell.swift in Sources */,
 				2A2D8CCF2495D14D00819876 /* CategoriesViewController+tableView.swift in Sources */,
+				2AE1691F249697840069E63D /* FacilitiesServices.swift in Sources */,
 				2A0ED2EF249578D00042ACE8 /* MapViewController.swift in Sources */,
 				2AABCFD524947BDE0087A823 /* CommercialFacility.swift in Sources */,
 				2A2D8D032496671600819876 /* HomeViewController.swift in Sources */,
@@ -1094,6 +1126,7 @@
 				2A0ED2CD24951C2A0042ACE8 /* MKMapView+drawRoute.swift in Sources */,
 				2AF79F4F24945E8F00DFBD6A /* NumberFormatter+Decimal.swift in Sources */,
 				2A0ED2F824957B130042ACE8 /* MapViewController+MapDelegate.swift in Sources */,
+				2AE1692824969CEB0069E63D /* LenghFormatter+appFormatter.swift in Sources */,
 				2A0ED2FC24957BBF0042ACE8 /* MapViewController+User.swift in Sources */,
 				2AABCFD0249461990087A823 /* Date+dateRanges.swift in Sources */,
 				2A2D8CC62495CEF900819876 /* CategoryCell.swift in Sources */,
@@ -1108,6 +1141,7 @@
 				2A2D8CC12495CE6200819876 /* CategoriesViewController.swift in Sources */,
 				2A2D8CE72495E59F00819876 /* CommercialFacilityViewController.swift in Sources */,
 				2A2D8D082496692A00819876 /* HomeViewController+tableView.swift in Sources */,
+				2AE16924249698520069E63D /* FacilitiesDAO.swift in Sources */,
 				2A2D8CEB2495F41A00819876 /* CommercialFacilityViewController+tableView.swift in Sources */,
 				2A2D8CFA2496623400819876 /* UINavigationBar+Size.swift in Sources */,
 				2A2D8D0E249669F000819876 /* CardCell.swift in Sources */,
@@ -1124,6 +1158,7 @@
 				2A2D8CE22495DFBE00819876 /* FacilityCategory.swift in Sources */,
 				2A2D8CF22495F4A900819876 /* FacilityCell.swift in Sources */,
 				2A2D8CD02495D14D00819876 /* CategoriesViewController+tableView.swift in Sources */,
+				2AE16920249697840069E63D /* FacilitiesServices.swift in Sources */,
 				2A0ED2F0249578D00042ACE8 /* MapViewController.swift in Sources */,
 				2AABCFD624947BDE0087A823 /* CommercialFacility.swift in Sources */,
 				2A2D8D042496671600819876 /* HomeViewController.swift in Sources */,
@@ -1132,6 +1167,7 @@
 				2A0ED2CE24951C2A0042ACE8 /* MKMapView+drawRoute.swift in Sources */,
 				2AF79F5024945E8F00DFBD6A /* NumberFormatter+Decimal.swift in Sources */,
 				2A0ED2F924957B130042ACE8 /* MapViewController+MapDelegate.swift in Sources */,
+				2AE1692924969CEB0069E63D /* LenghFormatter+appFormatter.swift in Sources */,
 				2A0ED2FD24957BBF0042ACE8 /* MapViewController+User.swift in Sources */,
 				2AABCFD1249461990087A823 /* Date+dateRanges.swift in Sources */,
 				2A2D8CC72495CEF900819876 /* CategoryCell.swift in Sources */,
@@ -1223,7 +1259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1277,7 +1313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

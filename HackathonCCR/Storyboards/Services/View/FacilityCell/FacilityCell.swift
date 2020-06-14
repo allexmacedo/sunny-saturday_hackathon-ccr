@@ -15,19 +15,40 @@ class FacilityCell: UITableViewCell {
     
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var contentBackground: UIView!
     
-    func configure(image: UIImage?, title: String, rating: String, distance: String) {
+    @IBOutlet weak var verifiedIcon: UIImageView!
+    @IBOutlet weak var ratingsIcon: UIImageView!
+    
+    func configure(image: UIImage?, title: String, rating: String?, distance: String?) {
         
         self.iconView.image = image
         
         self.titleLabel.text = title
-        self.titleLabel.font = UIFont.AppFonts.boldAppFont(withTextStyle: .title2)
+        self.titleLabel.font = UIFont.AppFonts.boldAppFont(withTextStyle: .headline)
         
-        self.ratingLabel.text = rating
-        self.ratingLabel.font = UIFont.AppFonts.boldAppFont(withTextStyle: .callout)
+        if let rating = rating {
+            self.ratingLabel.text = rating
+            self.ratingLabel.font = UIFont.AppFonts.boldAppFont(withTextStyle: .callout)
+            
+            self.ratingLabel.isHidden = false
+            self.ratingsIcon.isHidden = false
+        } else {
+            
+            self.ratingLabel.isHidden = true
+            self.ratingsIcon.isHidden = true
+        }
         
-        self.distanceLabel.text = distance
+        if let distance = distance {
+            self.distanceLabel.text = distance
+            
+            self.distanceLabel.isHidden = false
+            
+        } else {
+            self.distanceLabel.isHidden = true
+        }
         
+        self.contentBackground.adjustCornerRadius()
+        self.contentBackground.backgroundColor = UIColor.AppColors.cardColor
     }
-    
 }

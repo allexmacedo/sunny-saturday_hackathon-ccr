@@ -20,7 +20,7 @@ extension CommercialFacilityViewController {
 
 extension CommercialFacilityViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return facilities.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -28,7 +28,24 @@ extension CommercialFacilityViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: FacilityCell.identifier, for: indexPath)
         
         if let facilityCell = cell as? FacilityCell {
-            facilityCell.configure(image: UIImage(named: "graal"), title: "Posto Graal", rating: "4/5", distance: "10,0 km")
+            
+            let item = facilities[indexPath.row]
+            
+            let image = UIImage(named: item.image)
+            
+            let title = item.name
+            
+            let rating: String? = NumberFormatter.localizedDecimalString(from: item.rating)
+            
+            let distance = userLocation?.distance(from: item.coordinate)
+            
+            var distanceLabel: String?
+            
+            if let distance = distance {
+                distanceLabel = LengthFormatter.localizedString(fromMeters: distance)
+            }
+            
+            facilityCell.configure(image: image, title: title, rating: rating, distance: distanceLabel)
         }
         
         return cell

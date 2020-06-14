@@ -16,6 +16,7 @@ class QRScanViewController: UIViewController, QRCodeViewDelegate {
         super.viewDidLoad()
         
         qrCodeView.delegate = self
+        qrCodeView.adjustCornerRadius()
 
         // Do any additional setup after loading the view.
         qrCodeView.configurePreviewSession()

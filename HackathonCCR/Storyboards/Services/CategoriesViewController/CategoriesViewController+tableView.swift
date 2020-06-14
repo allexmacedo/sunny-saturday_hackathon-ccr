@@ -16,7 +16,7 @@ extension CategoriesViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 0, right: 0)
+        tableView.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 0, right: 0)
     }
 }
 
@@ -76,16 +76,14 @@ extension CategoriesViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 90
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        guard indexPath.row > 0 else {return}
-        
-        let category = categories[indexPath.row - 1]
+        let category = categories[indexPath.row]
         
         self.performSegue(withIdentifier: Segues.commercialFacilities.rawValue, sender: category)
     }

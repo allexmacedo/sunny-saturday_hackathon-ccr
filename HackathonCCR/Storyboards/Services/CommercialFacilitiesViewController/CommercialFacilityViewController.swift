@@ -7,10 +7,19 @@
 //
 
 import UIKit
+import CoreLocation
 
 class CommercialFacilityViewController: UIViewController {
     
     var category: FacilityCategory?
+    
+    var facilities: [CommercialFacility] = []
+    
+    var userLocation: CLLocation?
+    
+    var locationServices: LocationBusinessLogic = LocationServices()
+    
+    var facilitiesServices: FacilitiesBusinessLogic = FacilitiesServices()
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -18,7 +27,38 @@ class CommercialFacilityViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.title = category?.rawValue
         
         configureTableView()
+        
+        loadContent()
+    }
+    
+    func loadContent() {
+        
+        guard let category = category else {return}
+        
+        facilitiesServices.retriveFacilities(ofCategory: category) { (result) in
+            switch result {
+                case .success(let facilities):
+                    self.facilities = facilities
+                    self.tableView.reloadData()
+                
+                case .failure(let error):
+                    print("Unsolved error at \(self): \(error)")
+            }
+        }
+        
+        locationServices.retriveUserLocation { (result) in
+            
+            switch result {
+                case .success(let location):
+                    self.userLocation = location
+                    self.tableView.reloadData()
+                
+                case .failure(let error):
+                    print("Unsolved error at \(self): \(error)")
+            }
+        }
     }
 }

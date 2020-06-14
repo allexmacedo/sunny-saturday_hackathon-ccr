@@ -40,8 +40,10 @@ class HomeViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: UIImageView(image: UIImage(named: "logo")))
         self.navigationItem.leftBarButtonItem?.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 16, right: 0)
         
-        self.navigationItem.rightBarButtonItems = [ UIBarButtonItem(image: UIImage(named: "profile"), style: .plain, target: nil, action: nil),
-                                                    UIBarButtonItem(image: UIImage(named: "qr"), style: .plain, target: self, action: #selector(handleQrCodeTapped))]
+        self.navigationItem.rightBarButtonItems = [ UIBarButtonItem(image: UIImage(named: "profile"), style: .plain,
+                                                                    target: nil, action: nil),
+                                                    UIBarButtonItem(image: UIImage(named: "qr"), style: .plain,
+                                                                    target: self, action: #selector(handleQrCodeTapped))]
         
         _ = self.navigationController?.navigationBar.sizeThatFits(self.view.frame.size)
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)

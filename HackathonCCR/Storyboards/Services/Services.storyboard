@@ -10,7 +10,7 @@
         <!--Categorias-->
         <scene sceneID="RvN-Nb-m9Y">
             <objects>
-                <viewController id="yf7-hD-d2x" customClass="CategoriesViewController" customModule="HackathonCCR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yf7-hD-d2x" customClass="CategoriesViewController" customModule="HackathonCCRTests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RHF-sg-hjz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,13 +43,13 @@
         <!--Commercial Facility View Controller-->
         <scene sceneID="p7i-NQ-qwS">
             <objects>
-                <viewController id="7Tu-hc-fpF" customClass="CommercialFacilityViewController" customModule="HackathonCCR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7Tu-hc-fpF" customClass="CommercialFacilityViewController" customModule="HackathonCCRTests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3IR-Ci-qx2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="CYg-A4-9DW">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="CYg-A4-9DW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -62,7 +62,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fZn-xT-Be1"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vrc-BK-tnm"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="vrc-BK-tnm"/>
                     <connections>
                         <outlet property="tableView" destination="CYg-A4-9DW" id="2Wn-B8-jxp"/>
                         <segue destination="def-pJ-gcN" kind="show" identifier="FacilityInformation" id="kGp-bk-1oI"/>
@@ -106,7 +106,7 @@
     <color key="tintColor" name="Green"/>
     <resources>
         <namedColor name="Green">
-            <color red="0.1478357911" green="0.83092874289999996" blue="0.39991950990000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.14499999582767487" green="0.82700002193450928" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

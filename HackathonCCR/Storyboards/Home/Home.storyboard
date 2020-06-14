@@ -10,7 +10,7 @@
         <!--Home View Controller-->
         <scene sceneID="58X-aJ-V4y">
             <objects>
-                <viewController id="8J8-DQ-Tpp" customClass="HomeViewController" customModule="HackathonCCR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8J8-DQ-Tpp" customClass="HomeViewController" customModule="HackathonCCRTests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Hz-IK-XEi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,14 +41,14 @@
         <!--Scan View Controller-->
         <scene sceneID="Fjf-eC-8yf">
             <objects>
-                <viewController id="Ymj-eq-sZU" customClass="QRScanViewController" customModule="HackathonCCR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ymj-eq-sZU" customClass="QRScanViewController" customModule="HackathonCCRTests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7SD-u1-jGp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JV9-un-XyS" customClass="QRCodeView" customModule="HackathonCCR" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JV9-un-XyS" customClass="QRCodeView" customModule="HackathonCCRTests" customModuleProvider="target">
                                 <rect key="frame" x="62" y="276" width="290" height="290"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="JV9-un-XyS" secondAttribute="height" multiplier="1:1" id="XaZ-gP-7BD"/>
                                 </constraints>
@@ -63,7 +63,7 @@
                         <viewLayoutGuide key="safeArea" id="6hw-Hm-6Kl"/>
                     </view>
                     <navigationItem key="navigationItem" id="dgZ-9M-tmO">
-                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="CME-aV-QaH">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="CME-aV-QaH">
                             <connections>
                                 <action selector="handleCancel:" destination="Ymj-eq-sZU" id="D7k-KN-qAF"/>
                             </connections>
@@ -119,7 +119,7 @@
     <color key="tintColor" name="Green"/>
     <resources>
         <namedColor name="Green">
-            <color red="0.14509803921568626" green="0.82745098039215681" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.14499999582767487" green="0.82700002193450928" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

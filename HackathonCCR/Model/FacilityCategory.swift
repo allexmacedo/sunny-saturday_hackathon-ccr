@@ -8,12 +8,29 @@
 
 import Foundation
 
-enum FacilityCategory: String, CaseIterable {
-    case suport       = "Pontos de apoio da concessionária"
+enum FacilityCategory: String, CaseIterable, Codable {
+    
+    case suport       = "Pontos de apoio"
     case hotels       = "Hotéis"
-    case resting      = "Pontos de descanso"
+    case resting      = "Área de descanso"
     case gas          = "Postos de gasolina"
-    case restaurants  = "Restaurantes"
-    case repair       = "Mecânicas especializadas"
+    case restaurants  = "Alimentação"
+    case repair       = "Mecânica"
     case services     = "Postos de serviços"
+    case health       = "Saúde"
+    case help         = "Socorro"
+    case tireShop     = "Borracharia"
+    
+    enum CodingKeys: String, CodingKey {
+        case suport
+        case hotels
+        case resting
+        case gas
+        case restaurants
+        case repair      
+        case services
+        case health
+        case help
+        case tireShop
+    }
 }
