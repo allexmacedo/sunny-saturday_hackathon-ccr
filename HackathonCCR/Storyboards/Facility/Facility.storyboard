@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Facility View Controller-->
         <scene sceneID="DZz-Pf-D7k">
             <objects>
-                <viewController id="ltp-9c-DNm" sceneMemberID="viewController">
+                <viewController id="ltp-9c-DNm" customClass="FacilityViewController" customModule="reupi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SVR-Fw-yWG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xf0-rh-VfW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1023" y="226"/>
+            <point key="canvasLocation" x="-459" y="82"/>
         </scene>
     </scenes>
 </document>

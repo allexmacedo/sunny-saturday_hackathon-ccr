@@ -152,6 +152,7 @@
 		2AABCFDB249486F90087A823 /* CommercialFacilityAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCFDA249486F90087A823 /* CommercialFacilityAnnotation.swift */; };
 		2AABCFDC249486F90087A823 /* CommercialFacilityAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCFDA249486F90087A823 /* CommercialFacilityAnnotation.swift */; };
 		2AABCFDD249486F90087A823 /* CommercialFacilityAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCFDA249486F90087A823 /* CommercialFacilityAnnotation.swift */; };
+		2AC670ED2496A7A000A41FF4 /* FacilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC670EC2496A7A000A41FF4 /* FacilityViewController.swift */; };
 		2AE1691A249695710069E63D /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE16919249695710069E63D /* RoundedView.swift */; };
 		2AE1691E249697840069E63D /* FacilitiesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1691D249697840069E63D /* FacilitiesServices.swift */; };
 		2AE1691F249697840069E63D /* FacilitiesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1691D249697840069E63D /* FacilitiesServices.swift */; };
@@ -264,6 +265,7 @@
 		2AABCFCE249461990087A823 /* Date+dateRanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+dateRanges.swift"; sourceTree = "<group>"; };
 		2AABCFD324947BDE0087A823 /* CommercialFacility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommercialFacility.swift; sourceTree = "<group>"; };
 		2AABCFDA249486F90087A823 /* CommercialFacilityAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommercialFacilityAnnotation.swift; sourceTree = "<group>"; };
+		2AC670EC2496A7A000A41FF4 /* FacilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityViewController.swift; sourceTree = "<group>"; };
 		2AE16919249695710069E63D /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		2AE1691D249697840069E63D /* FacilitiesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesServices.swift; sourceTree = "<group>"; };
 		2AE16921249698520069E63D /* FacilitiesDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesDAO.swift; sourceTree = "<group>"; };
@@ -430,6 +432,7 @@
 			isa = PBXGroup;
 			children = (
 				2A2D8C992495BCB600819876 /* Facility.storyboard */,
+				2AC670EB2496A77F00A41FF4 /* FacilityViewController */,
 			);
 			path = Facility;
 			sourceTree = "<group>";
@@ -698,6 +701,14 @@
 				2AABCFDA249486F90087A823 /* CommercialFacilityAnnotation.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2AC670EB2496A77F00A41FF4 /* FacilityViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2AC670EC2496A7A000A41FF4 /* FacilityViewController.swift */,
+			);
+			path = FacilityViewController;
 			sourceTree = "<group>";
 		};
 		2AE1692524969CD00069E63D /* MKDistanceFormmater */ = {
@@ -1028,6 +1039,7 @@
 				2AABCF8A24945FAB0087A823 /* ParameterEncoding.swift in Sources */,
 				2AABCF8C24945FAB0087A823 /* URLParameterEncoder.swift in Sources */,
 				2A2D8D022496671600819876 /* HomeViewController.swift in Sources */,
+				2AC670ED2496A7A000A41FF4 /* FacilityViewController.swift in Sources */,
 				2A2D8CF02495F4A900819876 /* FacilityCell.swift in Sources */,
 				2AE16922249698520069E63D /* FacilitiesDAO.swift in Sources */,
 				2AABCFB724945FF70087A823 /* UITextField+Height.swift in Sources */,

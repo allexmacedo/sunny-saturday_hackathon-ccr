@@ -23,6 +23,10 @@ class CommercialFacilityViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    enum Segues: String {
+        case facilitiesInformation = "FacilityInformation"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +36,15 @@ class CommercialFacilityViewController: UIViewController {
         configureTableView()
         
         loadContent()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        if let facilityViewController = segue.destination as? FacilityViewController,
+            let sender = sender as? CommercialFacility {
+            facilityViewController.facility = sender
+        }
     }
     
     func loadContent() {

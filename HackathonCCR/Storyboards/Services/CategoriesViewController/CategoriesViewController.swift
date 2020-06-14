@@ -21,6 +21,7 @@ class CategoriesViewController: UIViewController {
     enum Segues: String {
         case commercialFacilities = "CommercialFacilities"
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
