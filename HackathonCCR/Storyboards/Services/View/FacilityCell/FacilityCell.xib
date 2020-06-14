@@ -126,7 +126,7 @@
         <image name="check" width="16" height="10"/>
         <image name="star" width="14" height="14"/>
         <namedColor name="Green">
-            <color red="0.14499999582767487" green="0.82700002193450928" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.043000001460313797" green="0.65799999237060547" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

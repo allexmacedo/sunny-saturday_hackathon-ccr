@@ -125,6 +125,7 @@
 		2A91B2992496CA2C0055379E /* CategoryCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A91B2972496CA2C0055379E /* CategoryCollectionCell.xib */; };
 		2A91B29D2496CE8A0055379E /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91B29B2496CE8A0055379E /* ButtonCell.swift */; };
 		2A91B29E2496CE8A0055379E /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A91B29C2496CE8A0055379E /* ButtonCell.xib */; };
+		2A91B2A02496D9400055379E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91B29F2496D9400055379E /* GradientView.swift */; };
 		2AABCF8924945FAB0087A823 /* NetworkDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */; };
 		2AABCF8A24945FAB0087A823 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */; };
 		2AABCF8B24945FAB0087A823 /* RequestEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */; };
@@ -257,6 +258,7 @@
 		2A91B2972496CA2C0055379E /* CategoryCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionCell.xib; sourceTree = "<group>"; };
 		2A91B29B2496CE8A0055379E /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
 		2A91B29C2496CE8A0055379E /* ButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
+		2A91B29F2496D9400055379E /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDAO.swift; sourceTree = "<group>"; };
 		2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEncodable.swift; sourceTree = "<group>"; };
@@ -533,6 +535,7 @@
 		2A2D8CFB249666A900819876 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2A91B29F2496D9400055379E /* GradientView.swift */,
 				2A2D8D09249669CE00819876 /* CardCell */,
 				2A2D8CFC249666B800819876 /* Home.storyboard */,
 				2A2D8D002496670000819876 /* HomeViewController */,
@@ -1184,6 +1187,7 @@
 				2A2D8D0C249669F000819876 /* CardCell.swift in Sources */,
 				2AF79F4E24945E8F00DFBD6A /* NumberFormatter+Decimal.swift in Sources */,
 				2AF79F4624945D8F00DFBD6A /* NumberFormatter+Currency.swift in Sources */,
+				2A91B2A02496D9400055379E /* GradientView.swift in Sources */,
 				2AABCFC224945FF70087A823 /* UIViewController+presentAlert.swift in Sources */,
 				2AABCFB324945FF70087A823 /* UICollectionView+BackgroundActivity.swift in Sources */,
 				2A0ED2FB24957BBF0042ACE8 /* MapViewController+User.swift in Sources */,
