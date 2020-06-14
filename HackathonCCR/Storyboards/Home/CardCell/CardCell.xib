@@ -61,6 +61,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="contentBackground" destination="yDV-90-r88" id="JXZ-65-Vm3"/>
                 <outlet property="contentLabel" destination="jfV-T4-mSy" id="c9F-U8-m4i"/>
                 <outlet property="title" destination="gh9-cm-58e" id="CFR-Oa-EFv"/>
             </connections>

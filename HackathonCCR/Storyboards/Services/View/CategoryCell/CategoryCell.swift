@@ -14,8 +14,13 @@ class CategoryCell: UITableViewCell {
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var mockSeparator: UIView!
+    @IBOutlet weak var indicatorIcon: UIImageView!
     
-    func configure(image: UIImage?, text: String?, first: Bool, last: Bool) {
+    func configure(image: UIImage?,
+                   text: String?,
+                   first: Bool,
+                   last: Bool,
+                   backgroundColor: UIColor) {
         
         if let image = image {
             self.iconView.image = image
@@ -27,6 +32,8 @@ class CategoryCell: UITableViewCell {
         
         self.titleLabel.text = text
         
+        self.stackBackground.backgroundColor = backgroundColor
+        
         if last || first {
             self.stackBackground.layer.cornerRadius = 16
             
@@ -35,14 +42,28 @@ class CategoryCell: UITableViewCell {
         }
         
         self.mockSeparator.isHidden = false
+        
+        if first && last {
+            self.stackBackground.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner,
+                                                        .layerMinXMinYCorner, .layerMaxXMinYCorner]
+            self.mockSeparator.isHidden = true
 
-        if first {
+        } else if first {
             self.stackBackground.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
             
         } else if last {
             self.stackBackground.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
             
             self.mockSeparator.isHidden = true
+        }
+        
+        if backgroundColor == UIColor.AppColors.green {
+            indicatorIcon.tintColor = .white
+            titleLabel.textColor = .white
+
+        } else {
+            indicatorIcon.tintColor = UIColor.AppColors.secondaryLabel
+            titleLabel.textColor = UIColor.AppColors.label
         }
     }
 }

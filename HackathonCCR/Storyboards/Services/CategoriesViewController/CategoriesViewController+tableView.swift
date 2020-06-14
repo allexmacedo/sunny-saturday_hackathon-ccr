@@ -15,39 +15,56 @@ extension CategoriesViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 0, right: 0)
     }
 }
 
 extension CategoriesViewController: UITableViewDataSource {
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return FacilityCategory.allCases.count + 1
+        
+        guard section == 0 else {return 1}
+        
+        return FacilityCategory.allCases.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: UITableViewCell
         
-        if indexPath.row == 0 {
-            cell = tableView.dequeueReusableCell(withIdentifier: TextCell.identifier, for: indexPath)
+        cell = tableView.dequeueReusableCell(withIdentifier: CategoryCell.identifier, for: indexPath)
+        
+        if let categoryCell = cell as? CategoryCell {
             
-            if let headerCell = cell as? TextCell {
-                headerCell.configure(text: "Categorias", textStyle: .title2)
-            }
+            let text: String
+            var image: UIImage?
+            let first, last: Bool
+            let cardColor: UIColor
             
-        } else {
+            first = indexPath.row == 0
             
-            cell = tableView.dequeueReusableCell(withIdentifier: CategoryCell.identifier, for: indexPath)
-            
-            if let categoryCell = cell as? CategoryCell {
-                let text = categories[indexPath.row - 1].rawValue
+            if indexPath.section == 0 {
+                text = categories[indexPath.row].rawValue
+                last = indexPath.row == numberOfItems - 1
+                cardColor = UIColor.AppColors.cardColor
                 
-                categoryCell.configure(image: nil, text: text, first: indexPath.row == 1, last: indexPath.row == numberOfItems)
+            } else {
+                text = "Telefones de emergência"
+                image = UIImage(named: "telephone")
+                last = true
+                cardColor = UIColor.AppColors.green
             }
+            
+            categoryCell.configure(image: image, text: text, first: first, last: last, backgroundColor: cardColor)
         }
         
         cell.selectionStyle = .none
-
+        
         return cell
     }
 }

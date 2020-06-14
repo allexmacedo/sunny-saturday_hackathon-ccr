@@ -30,13 +30,14 @@
                                 <rect key="frame" x="16" y="16" width="362" height="112"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F8p-kS-gLO">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="112"/>
+                                        <rect key="frame" x="0.0" y="43" width="26" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="F8p-kS-gLO" secondAttribute="height" multiplier="1:1" id="Dq8-Ji-GZd"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="26" id="fVi-aq-BU9"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSA-Ao-kFK">
-                                        <rect key="frame" x="128" y="11" width="206" height="90"/>
+                                        <rect key="frame" x="42" y="11" width="292" height="90"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -78,6 +79,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="iconView" destination="F8p-kS-gLO" id="y9v-L0-sov"/>
+                <outlet property="indicatorIcon" destination="SAE-W3-Sk3" id="PFJ-vE-o70"/>
                 <outlet property="mockSeparator" destination="P5J-4v-eOE" id="Lw7-g3-SPe"/>
                 <outlet property="stackBackground" destination="c8R-on-e75" id="gp9-MO-P68"/>
                 <outlet property="titleLabel" destination="eSA-Ao-kFK" id="dGx-om-4pP"/>
