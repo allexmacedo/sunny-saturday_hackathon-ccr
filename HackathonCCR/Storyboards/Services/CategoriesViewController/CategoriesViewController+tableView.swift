@@ -16,6 +16,8 @@ extension CategoriesViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        tableView.configureBackgroundActivityView()
+        
         tableView.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 0, right: 0)
     }
 }
@@ -27,10 +29,10 @@ extension CategoriesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+                
         guard section == 0 else {return 1}
         
-        return FacilityCategory.allCases.count
+        return categories.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -49,7 +51,7 @@ extension CategoriesViewController: UITableViewDataSource {
             first = indexPath.row == 0
             
             if indexPath.section == 0 {
-                text = categories[indexPath.row].rawValue
+                text = categories[indexPath.row].name ?? ""
                 last = indexPath.row == numberOfItems - 1
                 cardColor = UIColor.AppColors.cardColor
                 

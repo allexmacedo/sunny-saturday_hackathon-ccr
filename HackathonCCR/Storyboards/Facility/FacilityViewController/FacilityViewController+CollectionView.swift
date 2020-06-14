@@ -148,7 +148,7 @@ extension FacilityViewController: UICollectionViewDataSource {
                 cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionCell.identifier, for: indexPath)
                 
                 if let categoryCell = cell as? CategoryCollectionCell, let facility = facility {
-                    categoryCell.configure(title: facility.category[indexPath.row - 1].rawValue)
+                    categoryCell.configure(title: facility.category[indexPath.row - 1].name ?? "")
                 }
             }
             

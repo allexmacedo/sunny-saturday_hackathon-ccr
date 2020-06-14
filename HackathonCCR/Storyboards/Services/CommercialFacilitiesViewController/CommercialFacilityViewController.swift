@@ -31,7 +31,7 @@ class CommercialFacilityViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = category?.rawValue
+        self.title = category?.name
         
         configureTableView()
         
