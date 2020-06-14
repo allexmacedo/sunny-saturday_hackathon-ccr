@@ -63,8 +63,13 @@ extension CategoriesViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         tableView.deselectRow(at: indexPath, animated: true)
         
         guard indexPath.row > 0 else {return}
+        
+        let category = categories[indexPath.row - 1]
+        
+        self.performSegue(withIdentifier: Segues.commercialFacilities.rawValue, sender: category)
     }
 }

@@ -53,9 +53,9 @@
 		2A0ED2FB24957BBF0042ACE8 /* MapViewController+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2FA24957BBF0042ACE8 /* MapViewController+User.swift */; };
 		2A0ED2FC24957BBF0042ACE8 /* MapViewController+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2FA24957BBF0042ACE8 /* MapViewController+User.swift */; };
 		2A0ED2FD24957BBF0042ACE8 /* MapViewController+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED2FA24957BBF0042ACE8 /* MapViewController+User.swift */; };
-		2A2D8C9A2495BCB600819876 /* CommercialFacilities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8C992495BCB600819876 /* CommercialFacilities.storyboard */; };
-		2A2D8C9B2495BCB600819876 /* CommercialFacilities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8C992495BCB600819876 /* CommercialFacilities.storyboard */; };
-		2A2D8C9C2495BCB600819876 /* CommercialFacilities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8C992495BCB600819876 /* CommercialFacilities.storyboard */; };
+		2A2D8C9A2495BCB600819876 /* Facility.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8C992495BCB600819876 /* Facility.storyboard */; };
+		2A2D8C9B2495BCB600819876 /* Facility.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8C992495BCB600819876 /* Facility.storyboard */; };
+		2A2D8C9C2495BCB600819876 /* Facility.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8C992495BCB600819876 /* Facility.storyboard */; };
 		2A2D8C9E2495C40100819876 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8C9D2495C40100819876 /* MainTabController.swift */; };
 		2A2D8C9F2495C40100819876 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8C9D2495C40100819876 /* MainTabController.swift */; };
 		2A2D8CA02495C40100819876 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8C9D2495C40100819876 /* MainTabController.swift */; };
@@ -86,6 +86,18 @@
 		2A2D8CE02495DFBE00819876 /* FacilityCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CDF2495DFBE00819876 /* FacilityCategory.swift */; };
 		2A2D8CE12495DFBE00819876 /* FacilityCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CDF2495DFBE00819876 /* FacilityCategory.swift */; };
 		2A2D8CE22495DFBE00819876 /* FacilityCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CDF2495DFBE00819876 /* FacilityCategory.swift */; };
+		2A2D8CE52495E59F00819876 /* CommercialFacilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CE42495E59F00819876 /* CommercialFacilityViewController.swift */; };
+		2A2D8CE62495E59F00819876 /* CommercialFacilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CE42495E59F00819876 /* CommercialFacilityViewController.swift */; };
+		2A2D8CE72495E59F00819876 /* CommercialFacilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CE42495E59F00819876 /* CommercialFacilityViewController.swift */; };
+		2A2D8CE92495F41A00819876 /* CommercialFacilityViewController+tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CE82495F41A00819876 /* CommercialFacilityViewController+tableView.swift */; };
+		2A2D8CEA2495F41A00819876 /* CommercialFacilityViewController+tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CE82495F41A00819876 /* CommercialFacilityViewController+tableView.swift */; };
+		2A2D8CEB2495F41A00819876 /* CommercialFacilityViewController+tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CE82495F41A00819876 /* CommercialFacilityViewController+tableView.swift */; };
+		2A2D8CF02495F4A900819876 /* FacilityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CEE2495F4A900819876 /* FacilityCell.swift */; };
+		2A2D8CF12495F4A900819876 /* FacilityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CEE2495F4A900819876 /* FacilityCell.swift */; };
+		2A2D8CF22495F4A900819876 /* FacilityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D8CEE2495F4A900819876 /* FacilityCell.swift */; };
+		2A2D8CF32495F4A900819876 /* FacilityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8CEF2495F4A900819876 /* FacilityCell.xib */; };
+		2A2D8CF42495F4A900819876 /* FacilityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8CEF2495F4A900819876 /* FacilityCell.xib */; };
+		2A2D8CF52495F4A900819876 /* FacilityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D8CEF2495F4A900819876 /* FacilityCell.xib */; };
 		2AABCF8924945FAB0087A823 /* NetworkDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */; };
 		2AABCF8A24945FAB0087A823 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */; };
 		2AABCF8B24945FAB0087A823 /* RequestEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */; };
@@ -174,7 +186,7 @@
 		2A0ED2F2249579770042ACE8 /* MapViewController+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+Location.swift"; sourceTree = "<group>"; };
 		2A0ED2F624957B130042ACE8 /* MapViewController+MapDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+MapDelegate.swift"; sourceTree = "<group>"; };
 		2A0ED2FA24957BBF0042ACE8 /* MapViewController+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+User.swift"; sourceTree = "<group>"; };
-		2A2D8C992495BCB600819876 /* CommercialFacilities.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CommercialFacilities.storyboard; sourceTree = "<group>"; };
+		2A2D8C992495BCB600819876 /* Facility.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Facility.storyboard; sourceTree = "<group>"; };
 		2A2D8C9D2495C40100819876 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		2A2D8CA22495C5B000819876 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		2A2D8CA62495C60A00819876 /* MapViewController+Annotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+Annotations.swift"; sourceTree = "<group>"; };
@@ -185,6 +197,10 @@
 		2A2D8CD72495DAC700819876 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 		2A2D8CD82495DAC700819876 /* TextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
 		2A2D8CDF2495DFBE00819876 /* FacilityCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityCategory.swift; sourceTree = "<group>"; };
+		2A2D8CE42495E59F00819876 /* CommercialFacilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommercialFacilityViewController.swift; sourceTree = "<group>"; };
+		2A2D8CE82495F41A00819876 /* CommercialFacilityViewController+tableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommercialFacilityViewController+tableView.swift"; sourceTree = "<group>"; };
+		2A2D8CEE2495F4A900819876 /* FacilityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityCell.swift; sourceTree = "<group>"; };
+		2A2D8CEF2495F4A900819876 /* FacilityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FacilityCell.xib; sourceTree = "<group>"; };
 		2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDAO.swift; sourceTree = "<group>"; };
 		2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEncodable.swift; sourceTree = "<group>"; };
@@ -320,6 +336,7 @@
 				2A2D8CC22495CEDD00819876 /* View */,
 				2A0ED2DC24956B520042ACE8 /* Services.storyboard */,
 				2A2D8CCC2495D13B00819876 /* CategoriesViewController */,
+				2A2D8CE32495E55E00819876 /* CommercialFacilitiesViewController */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -362,12 +379,12 @@
 			path = MapViewController;
 			sourceTree = "<group>";
 		};
-		2A2D8C982495BC6400819876 /* CommercialFacilities */ = {
+		2A2D8C982495BC6400819876 /* Facility */ = {
 			isa = PBXGroup;
 			children = (
-				2A2D8C992495BCB600819876 /* CommercialFacilities.storyboard */,
+				2A2D8C992495BCB600819876 /* Facility.storyboard */,
 			);
-			path = CommercialFacilities;
+			path = Facility;
 			sourceTree = "<group>";
 		};
 		2A2D8CA12495C48000819876 /* Login */ = {
@@ -381,6 +398,7 @@
 		2A2D8CC22495CEDD00819876 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A2D8CEC2495F47900819876 /* FacilityCell */,
 				2A2D8CD62495DAB200819876 /* TextCell */,
 				2A2D8CCB2495CEFC00819876 /* CategoryCell */,
 			);
@@ -412,6 +430,24 @@
 				2A2D8CD82495DAC700819876 /* TextCell.xib */,
 			);
 			path = TextCell;
+			sourceTree = "<group>";
+		};
+		2A2D8CE32495E55E00819876 /* CommercialFacilitiesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A2D8CE42495E59F00819876 /* CommercialFacilityViewController.swift */,
+				2A2D8CE82495F41A00819876 /* CommercialFacilityViewController+tableView.swift */,
+			);
+			path = CommercialFacilitiesViewController;
+			sourceTree = "<group>";
+		};
+		2A2D8CEC2495F47900819876 /* FacilityCell */ = {
+			isa = PBXGroup;
+			children = (
+				2A2D8CEE2495F4A900819876 /* FacilityCell.swift */,
+				2A2D8CEF2495F4A900819876 /* FacilityCell.xib */,
+			);
+			path = FacilityCell;
 			sourceTree = "<group>";
 		};
 		2AABCF7824945FAB0087A823 /* Network */ = {
@@ -652,7 +688,7 @@
 				2AF79F112494590C00DFBD6A /* LaunchScreen.storyboard */,
 				2AF79F3B24945BAD00DFBD6A /* Main */,
 				2A0ED2D924956B100042ACE8 /* Services */,
-				2A2D8C982495BC6400819876 /* CommercialFacilities */,
+				2A2D8C982495BC6400819876 /* Facility */,
 				2A2D8CA12495C48000819876 /* Login */,
 				2A0ED2DA24956B290042ACE8 /* Map */,
 				2A0ED2E8249573F10042ACE8 /* Wallet */,
@@ -813,7 +849,8 @@
 				2A2D8CC82495CEF900819876 /* CategoryCell.xib in Resources */,
 				2AF79F0E2494590900DFBD6A /* Main.storyboard in Resources */,
 				2A0ED2EA249574030042ACE8 /* Wallet.storyboard in Resources */,
-				2A2D8C9A2495BCB600819876 /* CommercialFacilities.storyboard in Resources */,
+				2A2D8C9A2495BCB600819876 /* Facility.storyboard in Resources */,
+				2A2D8CF32495F4A900819876 /* FacilityCell.xib in Resources */,
 				2A2D8CA32495C5B000819876 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -822,6 +859,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2D8CF42495F4A900819876 /* FacilityCell.xib in Resources */,
 				2A0ED2E624956B650042ACE8 /* Profile.storyboard in Resources */,
 				2A2D8CC92495CEF900819876 /* CategoryCell.xib in Resources */,
 				2A2D8CDD2495DAC700819876 /* TextCell.xib in Resources */,
@@ -829,7 +867,7 @@
 				2A2D8CA42495C5B000819876 /* Login.storyboard in Resources */,
 				2A0ED2DE24956B520042ACE8 /* Services.storyboard in Resources */,
 				2A0ED2E224956B5B0042ACE8 /* Map.storyboard in Resources */,
-				2A2D8C9B2495BCB600819876 /* CommercialFacilities.storyboard in Resources */,
+				2A2D8C9B2495BCB600819876 /* Facility.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,6 +875,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2D8CF52495F4A900819876 /* FacilityCell.xib in Resources */,
 				2A0ED2E724956B650042ACE8 /* Profile.storyboard in Resources */,
 				2A2D8CCA2495CEF900819876 /* CategoryCell.xib in Resources */,
 				2A2D8CDE2495DAC700819876 /* TextCell.xib in Resources */,
@@ -844,7 +883,7 @@
 				2A2D8CA52495C5B000819876 /* Login.storyboard in Resources */,
 				2A0ED2DF24956B520042ACE8 /* Services.storyboard in Resources */,
 				2A0ED2E324956B5B0042ACE8 /* Map.storyboard in Resources */,
-				2A2D8C9C2495BCB600819876 /* CommercialFacilities.storyboard in Resources */,
+				2A2D8C9C2495BCB600819876 /* Facility.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -877,6 +916,7 @@
 			files = (
 				2AABCF8A24945FAB0087A823 /* ParameterEncoding.swift in Sources */,
 				2AABCF8C24945FAB0087A823 /* URLParameterEncoder.swift in Sources */,
+				2A2D8CF02495F4A900819876 /* FacilityCell.swift in Sources */,
 				2AABCFB724945FF70087A823 /* UITextField+Height.swift in Sources */,
 				2AABCF8F24945FAB0087A823 /* HTTPMethod.swift in Sources */,
 				2A09C4262495137D008B3CAD /* DirectionsDAO.swift in Sources */,
@@ -898,6 +938,7 @@
 				2AABCF8E24945FAB0087A823 /* HTTPTask.swift in Sources */,
 				2AABCFBE24945FF70087A823 /* String+Regex.swift in Sources */,
 				2AABCFD424947BDE0087A823 /* CommercialFacility.swift in Sources */,
+				2A2D8CE52495E59F00819876 /* CommercialFacilityViewController.swift in Sources */,
 				2A2D8C9E2495C40100819876 /* MainTabController.swift in Sources */,
 				2AF79F4A24945E0C00DFBD6A /* MeasurementFormatter+AppFormatters.swift in Sources */,
 				2AABCFB624945FF70087A823 /* UIView+CornerRadius.swift in Sources */,
@@ -927,6 +968,7 @@
 				2A0ED2CC24951C2A0042ACE8 /* MKMapView+drawRoute.swift in Sources */,
 				2AABCFCB2494613E0087A823 /* UITextField+Padding.swift in Sources */,
 				2AF79F092494590900DFBD6A /* SceneDelegate.swift in Sources */,
+				2A2D8CE92495F41A00819876 /* CommercialFacilityViewController+tableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -935,6 +977,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2D8CC02495CE6200819876 /* CategoriesViewController.swift in Sources */,
+				2A2D8CE62495E59F00819876 /* CommercialFacilityViewController.swift in Sources */,
+				2A2D8CEA2495F41A00819876 /* CommercialFacilityViewController+tableView.swift in Sources */,
 				2A0ED2D72495435E0042ACE8 /* QRCodeView.swift in Sources */,
 				2A09C42124948B8F008B3CAD /* GeocodingDAO.swift in Sources */,
 				2A0ED2F4249579770042ACE8 /* MapViewController+Location.swift in Sources */,
@@ -946,6 +990,7 @@
 				2A0ED2D224952D420042ACE8 /* DateComponentsFormatter+AppFormatter.swift in Sources */,
 				2A2D8CDA2495DAC700819876 /* TextCell.swift in Sources */,
 				2A2D8CE12495DFBE00819876 /* FacilityCategory.swift in Sources */,
+				2A2D8CF12495F4A900819876 /* FacilityCell.swift in Sources */,
 				2A2D8CCF2495D14D00819876 /* CategoriesViewController+tableView.swift in Sources */,
 				2A0ED2EF249578D00042ACE8 /* MapViewController.swift in Sources */,
 				2AABCFD524947BDE0087A823 /* CommercialFacility.swift in Sources */,
@@ -965,6 +1010,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2D8CC12495CE6200819876 /* CategoriesViewController.swift in Sources */,
+				2A2D8CE72495E59F00819876 /* CommercialFacilityViewController.swift in Sources */,
+				2A2D8CEB2495F41A00819876 /* CommercialFacilityViewController+tableView.swift in Sources */,
 				2A0ED2D82495435E0042ACE8 /* QRCodeView.swift in Sources */,
 				2A09C42224948B90008B3CAD /* GeocodingDAO.swift in Sources */,
 				2A0ED2F5249579770042ACE8 /* MapViewController+Location.swift in Sources */,
@@ -976,6 +1023,7 @@
 				2A0ED2D324952D420042ACE8 /* DateComponentsFormatter+AppFormatter.swift in Sources */,
 				2A2D8CDB2495DAC700819876 /* TextCell.swift in Sources */,
 				2A2D8CE22495DFBE00819876 /* FacilityCategory.swift in Sources */,
+				2A2D8CF22495F4A900819876 /* FacilityCell.swift in Sources */,
 				2A2D8CD02495D14D00819876 /* CategoriesViewController+tableView.swift in Sources */,
 				2A0ED2F0249578D00042ACE8 /* MapViewController.swift in Sources */,
 				2AABCFD624947BDE0087A823 /* CommercialFacility.swift in Sources */,

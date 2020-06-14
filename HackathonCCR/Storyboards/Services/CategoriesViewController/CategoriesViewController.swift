@@ -18,11 +18,23 @@ class CategoriesViewController: UIViewController {
         return categories.count
     }
     
+    enum Segues: String {
+        case commercialFacilities = "CommercialFacilities"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         configureTableView()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        if let commercialFacilitiesVC = segue.destination as? CommercialFacilityViewController,
+           let category = sender as? FacilityCategory {
+            commercialFacilitiesVC.category = category
+        }
     }
 }
