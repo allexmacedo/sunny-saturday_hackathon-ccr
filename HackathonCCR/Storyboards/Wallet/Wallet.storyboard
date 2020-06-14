@@ -63,4 +63,10 @@
             <point key="canvasLocation" x="108.69565217391305" y="-264.50892857142856"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="Green"/>
+    <resources>
+        <namedColor name="Green">
+            <color red="0.1478357911" green="0.83092874289999996" blue="0.39991950990000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
 </document>

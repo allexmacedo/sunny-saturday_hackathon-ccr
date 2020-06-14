@@ -35,7 +35,7 @@ class CategoryCell: UITableViewCell {
         self.stackBackground.backgroundColor = backgroundColor
         
         if last || first {
-            self.stackBackground.layer.cornerRadius = 16
+            self.stackBackground.layer.cornerRadius = 5
             
         } else {
             self.stackBackground.layer.cornerRadius = 0

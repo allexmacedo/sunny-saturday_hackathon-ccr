@@ -20,7 +20,7 @@
                         <rect key="frame" x="20" y="0.0" width="394" height="144"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5J-4v-eOE">
-                                <rect key="frame" x="8" y="143.5" width="386" height="0.5"/>
+                                <rect key="frame" x="16" y="143.5" width="378" height="0.5"/>
                                 <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="0.5" id="hEB-a4-lBz"/>
@@ -59,7 +59,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="P5J-4v-eOE" secondAttribute="trailing" id="9kx-E5-heX"/>
                             <constraint firstAttribute="bottom" secondItem="uSB-co-vSD" secondAttribute="bottom" constant="16" id="Dur-h9-Abu"/>
-                            <constraint firstItem="P5J-4v-eOE" firstAttribute="leading" secondItem="c8R-on-e75" secondAttribute="leading" constant="8" id="J2s-nj-Eh1"/>
+                            <constraint firstItem="P5J-4v-eOE" firstAttribute="leading" secondItem="c8R-on-e75" secondAttribute="leading" constant="16" id="J2s-nj-Eh1"/>
                             <constraint firstAttribute="trailing" secondItem="uSB-co-vSD" secondAttribute="trailing" constant="16" id="MXD-xv-RUs"/>
                             <constraint firstItem="uSB-co-vSD" firstAttribute="top" secondItem="c8R-on-e75" secondAttribute="top" constant="16" id="PPr-y5-igZ"/>
                             <constraint firstItem="uSB-co-vSD" firstAttribute="leading" secondItem="c8R-on-e75" secondAttribute="leading" constant="16" id="cTU-jC-zgL"/>
