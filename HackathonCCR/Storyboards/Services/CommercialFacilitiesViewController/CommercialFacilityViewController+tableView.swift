@@ -46,7 +46,7 @@ extension CommercialFacilityViewController: UITableViewDataSource {
                 distanceLabel = LengthFormatter.localizedString(fromMeters: distance)
             }
             
-            facilityCell.configure(image: image, title: title, rating: rating, distance: distanceLabel)
+            facilityCell.configure(image: image, title: title, rating: rating, verified: item.verified, distance: distanceLabel)
         }
         
         cell.selectionStyle = .none

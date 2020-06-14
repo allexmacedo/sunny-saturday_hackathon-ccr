@@ -22,6 +22,8 @@ struct CommercialFacility: Decodable {
     
     let coordinate: CLLocation
     
+    let verified: Bool
+    
     enum CodingKeys: String, CodingKey {
         case id
         case name
@@ -30,15 +32,17 @@ struct CommercialFacility: Decodable {
         case rating
         case latitude
         case longitude
+        case verified
     }
     
-    init(id: UUID, name: String, category: FacilityCategory, image: String, rating: Double, coordinate: CLLocation) {
+    init(id: UUID, name: String, category: FacilityCategory, image: String, rating: Double, verified: Bool, coordinate: CLLocation) {
         self.image = image
         self.id = id
         self.name = name
         self.category = category
         self.rating = rating
         self.coordinate = coordinate
+        self.verified = verified
     }
     
     init(from decoder: Decoder) throws {
@@ -53,12 +57,14 @@ struct CommercialFacility: Decodable {
         
         let category: FacilityCategory = try container.decode(FacilityCategory.self, forKey: .category)
         
+        let verified: Bool = try container.decode(Bool.self, forKey: .verified)
+        
         let rating: Double = try container.decode(Double.self, forKey: .id)
         
         let latitude: Double = try container.decode(Double.self, forKey: .id)
         let longitude: Double = try container.decode(Double.self, forKey: .id)
         
         self.init(id: id, name: name, category: category, image: image,
-                  rating: rating, coordinate: CLLocation(latitude: latitude, longitude: longitude))
+                  rating: rating, verified: verified, coordinate: CLLocation(latitude: latitude, longitude: longitude))
     }
 }

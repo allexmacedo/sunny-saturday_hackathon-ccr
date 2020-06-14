@@ -14,23 +14,55 @@ extension FacilityViewController {
         collectionView.dataSource = self
         
         collectionView.register(nibClass: ImageCell.self)
+        collectionView.register(nibClass: DetailCell.self)
+
     }
 }
 
 extension FacilityViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell: UICollectionViewCell
         
-        cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCell.identifier, for: indexPath)
+        let width = self.view.frame.width - 2 * 16
         
-        if let imageCell = cell as? ImageCell {
-            imageCell.configure(image: UIImage(named: "graal_bg"), width: self.view.frame.width - 2 * 16)
+        switch indexPath.row {
+            case 0:
+                cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCell.identifier, for: indexPath)
+                
+                if let imageCell = cell as? ImageCell {
+                    imageCell.configure(image: UIImage(named: "graal_bg"), width: width)
+            }
+            
+            case 1:
+                
+                cell = collectionView.dequeueReusableCell(withReuseIdentifier: DetailCell.identifier, for: indexPath)
+            
+                if let detailCell = cell as? DetailCell, let facility = facility {
+                    
+                    let image = UIImage(named: facility.image)
+                                        
+                    let rating: String? = NumberFormatter.localizedDecimalString(from: facility.rating)
+                    
+                    let distance = userLocation?.distance(from: facility.coordinate)
+                    
+                    var distanceLabel: String?
+                    
+                    if let distance = distance {
+                        distanceLabel = LengthFormatter.localizedString(fromMeters: distance)
+                    }
+                    
+                    detailCell.configure(image: image, rating: rating, distance: distanceLabel,
+                                         verified: facility.verified, width: width)
+            }
+            
+            default:
+                cell = UICollectionViewCell()
         }
         
         return cell

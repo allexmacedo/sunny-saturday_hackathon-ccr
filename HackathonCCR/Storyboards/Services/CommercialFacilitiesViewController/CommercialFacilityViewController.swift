@@ -44,6 +44,7 @@ class CommercialFacilityViewController: UIViewController {
         if let facilityViewController = segue.destination as? FacilityViewController,
             let sender = sender as? CommercialFacility {
             facilityViewController.facility = sender
+            facilityViewController.userLocation = userLocation
         }
     }
     

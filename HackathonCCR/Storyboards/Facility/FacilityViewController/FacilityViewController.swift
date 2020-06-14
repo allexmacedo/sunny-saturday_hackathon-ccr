@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import CoreLocation
 
 class FacilityViewController: UIViewController {
     
     var facility: CommercialFacility?
+    
+    var userLocation: CLLocation?
 
     @IBOutlet weak var collectionView: UICollectionView!
     
