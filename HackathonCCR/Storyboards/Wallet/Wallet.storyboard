@@ -7,18 +7,31 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Meus pontos-->
         <scene sceneID="O5l-tm-guL">
             <objects>
-                <viewController id="Teu-u7-WBp" sceneMemberID="viewController">
+                <viewController id="Teu-u7-WBp" customClass="WalletViewController" customModule="HackathonCCRTests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MVx-Zl-693">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="600-tz-ZrM">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="600-tz-ZrM" firstAttribute="top" secondItem="wpP-1h-aRv" secondAttribute="top" id="Gfn-7Z-m3W"/>
+                            <constraint firstItem="wpP-1h-aRv" firstAttribute="trailing" secondItem="600-tz-ZrM" secondAttribute="trailing" id="UD5-OR-H4C"/>
+                            <constraint firstItem="600-tz-ZrM" firstAttribute="leading" secondItem="wpP-1h-aRv" secondAttribute="leading" id="e8B-7q-LN3"/>
+                            <constraint firstItem="wpP-1h-aRv" firstAttribute="bottom" secondItem="600-tz-ZrM" secondAttribute="bottom" id="eqS-mP-Sze"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wpP-1h-aRv"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eBV-ne-gWi"/>
+                    <navigationItem key="navigationItem" title="Meus pontos" id="eBV-ne-gWi"/>
                     <connections>
+                        <outlet property="tableView" destination="600-tz-ZrM" id="fBI-HN-o1v"/>
                         <segue destination="Mc6-hY-j62" kind="show" identifier="Detail" id="Zaw-H2-oes"/>
                     </connections>
                 </viewController>
@@ -49,8 +62,8 @@
                     <tabBarItem key="tabBarItem" title="Carteira" image="star_icon" selectedImage="star_icon_fill" id="XrW-DS-IZT"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cgn-lo-2Gb">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Cgn-lo-2Gb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
