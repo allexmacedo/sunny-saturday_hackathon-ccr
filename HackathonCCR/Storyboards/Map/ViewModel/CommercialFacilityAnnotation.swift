@@ -16,7 +16,7 @@ class CommercialFacilityAnnotation: NSObject, MKAnnotation {
     
     init(from model: CommercialFacility) {
         
-        self.coordinate = CLLocationCoordinate2D(latitude: .zero, longitude: .zero)
+        self.coordinate = model.location.coordinate
         self.facility = model
         
         super.init()

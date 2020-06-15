@@ -9,7 +9,7 @@ import MapKit
 
 extension MapViewController {
     
-    private var defaultSpan: MKCoordinateSpan {
+    var defaultSpan: MKCoordinateSpan {
         return MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1)
     }
     

@@ -19,7 +19,7 @@ extension FacilityViewController {
         collectionView.register(nibClass: CategoryCollectionCell.self)
         collectionView.register(nibClass: ButtonCell.self)
         
-        self.collectionView.contentInset = UIEdgeInsets(top: .zero, left: .zero, bottom: 16, right: .zero)
+//        self.collectionView.contentInset = UIEdgeInsets(top: .zero, left: .zero, bottom: 16, right: .zero)
         
     }
 }
@@ -75,7 +75,7 @@ extension FacilityViewController: UICollectionViewDataSource {
                         
                         let rating: String? = NumberFormatter.localizedDecimalString(from: facility.rating)
                         
-                        let distance = userLocation?.distance(from: facility.coordinate)
+                        let distance = userLocation?.distance(from: facility.location)
                         
                         var distanceLabel: String?
                         
