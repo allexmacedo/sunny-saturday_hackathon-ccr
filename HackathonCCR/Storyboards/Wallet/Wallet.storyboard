@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Meus Pontos-->
+        <!--Meus pontos-->
         <scene sceneID="O5l-tm-guL">
             <objects>
                 <viewController id="Teu-u7-WBp" customClass="WalletViewController" customModule="HackathonCCRTests" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,7 +29,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wpP-1h-aRv"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Meus Pontos" id="eBV-ne-gWi"/>
+                    <navigationItem key="navigationItem" title="Meus pontos" id="eBV-ne-gWi"/>
                     <connections>
                         <outlet property="tableView" destination="600-tz-ZrM" id="fBI-HN-o1v"/>
                         <segue destination="Mc6-hY-j62" kind="show" identifier="Detail" id="Zaw-H2-oes"/>
