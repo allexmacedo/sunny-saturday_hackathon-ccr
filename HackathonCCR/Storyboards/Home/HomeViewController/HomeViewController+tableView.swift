@@ -61,8 +61,8 @@ extension HomeViewController: UITableViewDataSource {
                     
                     title.append(points)
                     
-                    let content = "Continue avaliando os pontos por  onde você passa, desse" +
-                                  "modo você  acumula mais pontos, e pode trocar por serviços e" +
+                    let content = "Continue avaliando os pontos por  onde você passa, desse " +
+                                  "modo você  acumula mais pontos, e pode trocar por serviços e " +
                                   "descontos nas empresas parceiras."
                     
                     cardCell.configure(title: title, content: content)

@@ -127,6 +127,9 @@
 		2A91B29E2496CE8A0055379E /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A91B29C2496CE8A0055379E /* ButtonCell.xib */; };
 		2A91B2A02496D9400055379E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91B29F2496D9400055379E /* GradientView.swift */; };
 		2A91B2A22496E7AF0055379E /* CategoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91B2A12496E7AF0055379E /* CategoryAPI.swift */; };
+		2A91B2A4249706180055379E /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91B2A3249706180055379E /* WalletViewController.swift */; };
+		2A91B2AA249706F10055379E /* PointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91B2A8249706F10055379E /* PointCell.swift */; };
+		2A91B2AB249706F10055379E /* PointCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A91B2A9249706F10055379E /* PointCell.xib */; };
 		2AABCF8924945FAB0087A823 /* NetworkDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */; };
 		2AABCF8A24945FAB0087A823 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */; };
 		2AABCF8B24945FAB0087A823 /* RequestEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */; };
@@ -261,6 +264,9 @@
 		2A91B29C2496CE8A0055379E /* ButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
 		2A91B29F2496D9400055379E /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		2A91B2A12496E7AF0055379E /* CategoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAPI.swift; sourceTree = "<group>"; };
+		2A91B2A3249706180055379E /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		2A91B2A8249706F10055379E /* PointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCell.swift; sourceTree = "<group>"; };
+		2A91B2A9249706F10055379E /* PointCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PointCell.xib; sourceTree = "<group>"; };
 		2AABCF7A24945FAB0087A823 /* NetworkDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDAO.swift; sourceTree = "<group>"; };
 		2AABCF7C24945FAB0087A823 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		2AABCF7D24945FAB0087A823 /* RequestEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEncodable.swift; sourceTree = "<group>"; };
@@ -437,7 +443,9 @@
 		2A0ED2E8249573F10042ACE8 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				2A91B2A52497066B0055379E /* PointsCell */,
 				2A0ED2E9249574030042ACE8 /* Wallet.storyboard */,
+				2A91B2A3249706180055379E /* WalletViewController.swift */,
 			);
 			path = Wallet;
 			sourceTree = "<group>";
@@ -588,6 +596,15 @@
 				2A91B29C2496CE8A0055379E /* ButtonCell.xib */,
 			);
 			path = ButtonCell;
+			sourceTree = "<group>";
+		};
+		2A91B2A52497066B0055379E /* PointsCell */ = {
+			isa = PBXGroup;
+			children = (
+				2A91B2A8249706F10055379E /* PointCell.swift */,
+				2A91B2A9249706F10055379E /* PointCell.xib */,
+			);
+			path = PointsCell;
 			sourceTree = "<group>";
 		};
 		2AABCF7824945FAB0087A823 /* Network */ = {
@@ -1053,6 +1070,7 @@
 				2AF79F3F24945BDF00DFBD6A /* Icons.xcassets in Resources */,
 				2AC671032496BADE00A41FF4 /* LabelCell.xib in Resources */,
 				2A91B2992496CA2C0055379E /* CategoryCollectionCell.xib in Resources */,
+				2A91B2AB249706F10055379E /* PointCell.xib in Resources */,
 				2A2D8CC82495CEF900819876 /* CategoryCell.xib in Resources */,
 				2AF79F0E2494590900DFBD6A /* Main.storyboard in Resources */,
 				2A0ED2EA249574030042ACE8 /* Wallet.storyboard in Resources */,
@@ -1141,6 +1159,7 @@
 				2A09C42024948B8D008B3CAD /* GeocodingDAO.swift in Sources */,
 				2AC671022496BADE00A41FF4 /* LabelCell.swift in Sources */,
 				2AABCF9324945FAB0087A823 /* Router.swift in Sources */,
+				2A91B2AA249706F10055379E /* PointCell.swift in Sources */,
 				2A91B29D2496CE8A0055379E /* ButtonCell.swift in Sources */,
 				2A09C41524948A52008B3CAD /* LocationDAO+LocationDataStore.swift in Sources */,
 				2AABCF8924945FAB0087A823 /* NetworkDAO.swift in Sources */,
@@ -1171,6 +1190,7 @@
 				2AE1691A249695710069E63D /* RoundedView.swift in Sources */,
 				2AABCF9024945FAB0087A823 /* EndPointType.swift in Sources */,
 				2AE1691E249697840069E63D /* FacilitiesServices.swift in Sources */,
+				2A91B2A4249706180055379E /* WalletViewController.swift in Sources */,
 				2AABCFC324945FF70087A823 /* UITableView+RegisterNib.swift in Sources */,
 				2A0ED2D62495435E0042ACE8 /* QRCodeView.swift in Sources */,
 				2AABCF8B24945FAB0087A823 /* RequestEncodable.swift in Sources */,
