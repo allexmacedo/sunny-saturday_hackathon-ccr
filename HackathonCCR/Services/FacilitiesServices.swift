@@ -10,7 +10,10 @@ import Foundation
 
 protocol FacilitiesBusinessLogic {
     
-    func retriveFacilities(ofCategory category: FacilityCategory, completion: @escaping (Result<[CommercialFacility], FacilitiesError>) -> Void)
+    func retriveFacilities(ofCategory category: FacilityCategory, completion: @escaping (Result<[CommercialFacility], Error>) -> Void)
+    
+    func retriveCategories(completion: @escaping (Result<[FacilityCategory], Error>) -> Void)
+
 }
 
 enum FacilitiesError: String, Error {
@@ -21,7 +24,7 @@ final class FacilitiesServices: FacilitiesBusinessLogic {
     
     var facilitiesDAO: FacilitiesDataStore = FacilitiesDAO()
     
-    func retriveFacilities(ofCategory category: FacilityCategory, completion: @escaping (Result<[CommercialFacility], FacilitiesError>) -> Void) {
+    func retriveFacilities(ofCategory category: FacilityCategory, completion: @escaping (Result<[CommercialFacility], Error>) -> Void) {
         
         let blockForExecutionInBackground = BlockOperation {
             
@@ -37,4 +40,22 @@ final class FacilitiesServices: FacilitiesBusinessLogic {
         
         QueueManager.sharedInstance.executeBlock(blockForExecutionInBackground, queueType: .serial)
     }
+    
+    func retriveCategories(completion: @escaping (Result<[FacilityCategory], Error>) -> Void) {
+        
+        let blockForExecutionInBackground = BlockOperation {
+            
+            self.facilitiesDAO.retriveCategories { (result) in
+                
+                let blockForExecutionInMain = BlockOperation {
+                    completion(result)
+                }
+                
+                QueueManager.sharedInstance.executeBlock(blockForExecutionInMain, queueType: .main)
+            }
+        }
+        
+        QueueManager.sharedInstance.executeBlock(blockForExecutionInBackground, queueType: .serial)
+    }
+
 }

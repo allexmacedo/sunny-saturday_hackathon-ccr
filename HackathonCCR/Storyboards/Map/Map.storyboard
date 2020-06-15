@@ -10,7 +10,7 @@
         <!--Map View Controller-->
         <scene sceneID="TDD-Cf-u5C">
             <objects>
-                <viewController id="j7B-x7-lYz" customClass="MapViewController" customModule="HackathonCCR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="j7B-x7-lYz" customClass="MapViewController" customModule="HackathonCCRTests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IZe-r1-Ucq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +53,7 @@
         <scene sceneID="l4z-dG-FFV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VMn-wV-s3I" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Mapa" id="jEE-k4-YR2"/>
+                    <tabBarItem key="tabBarItem" title="Mapa" image="map" selectedImage="map_fill" id="jEE-k4-YR2"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JDf-Xc-Wnd">
@@ -72,8 +72,10 @@
     </scenes>
     <color key="tintColor" name="Green"/>
     <resources>
+        <image name="map" width="24" height="24"/>
+        <image name="map_fill" width="24" height="24"/>
         <namedColor name="Green">
-            <color red="0.1478357911" green="0.83092874289999996" blue="0.39991950990000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.043000001460313797" green="0.65799999237060547" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

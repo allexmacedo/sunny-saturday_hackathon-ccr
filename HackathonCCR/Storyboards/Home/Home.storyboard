@@ -81,7 +81,7 @@
         <scene sceneID="lDM-A2-e4V">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bTx-JV-iWc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="Lgb-Jk-nUR"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home_empty" selectedImage="home" id="Lgb-Jk-nUR"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Ld-Ag-yK7">
@@ -118,8 +118,10 @@
     </scenes>
     <color key="tintColor" name="Green"/>
     <resources>
+        <image name="home" width="24" height="24"/>
+        <image name="home_empty" width="24" height="24"/>
         <namedColor name="Green">
-            <color red="0.14499999582767487" green="0.82700002193450928" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.043000001460313797" green="0.65799999237060547" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

@@ -16,6 +16,14 @@ extension UIColor {
             return UIColor(named: "Green") ?? .green
         }
         
+        static var lightGreen: UIColor {
+            return UIColor(named: "LightGreen") ?? .green
+        }
+        
+        static var blue: UIColor {
+            return UIColor(named: "Blue") ?? .blue
+        }
+        
         static var cardColor: UIColor {
             
             if #available(iOS 13.0, *) {

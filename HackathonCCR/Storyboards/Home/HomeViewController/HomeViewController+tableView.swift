@@ -28,7 +28,7 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if section == 0 {
-            return 3
+            return 2
         }
         
         return 0
@@ -53,8 +53,17 @@ extension HomeViewController: UITableViewDataSource {
                 cell = tableView.dequeueReusableCell(withIdentifier: CardCell.identifier, for: indexPath)
                 
                 if let cardCell = cell as? CardCell {
-                    let title: String = indexPath.row == 1 ? "Saldo" : "Pontos"
-                    let content: String = indexPath.row == 1 ? (NumberFormatter.localizedCurrencyString(from: 0.0) ?? "R$ 0,00") : "0.0 pts"
+                    
+                    let title = NSMutableAttributedString(string: "Uau, você já tem ",
+                                                          attributes: [NSAttributedString.Key.font: UIFont.AppFonts.appFont(withTextStyle: .body)])
+                    let points = NSMutableAttributedString(string: "0 pts",
+                                                           attributes: [NSAttributedString.Key.font: UIFont.AppFonts.boldAppFont(withTextStyle: .body)])
+                    
+                    title.append(points)
+                    
+                    let content = "Continue avaliando os pontos por  onde você passa, desse" +
+                                  "modo você  acumula mais pontos, e pode trocar por serviços e" +
+                                  "descontos nas empresas parceiras."
                     
                     cardCell.configure(title: title, content: content)
                 }

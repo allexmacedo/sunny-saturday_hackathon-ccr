@@ -13,15 +13,17 @@ class CardCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     
     @IBOutlet weak var contentLabel: UILabel!
-    @IBOutlet weak var contentBackground: UIView!
+    @IBOutlet weak var contentBackground: GradientView!
     
-    func configure(title: String, content: String) {
+    func configure(title: NSAttributedString, content: String) {
         
-        self.title.text = title
-        self.title.font = UIFont.AppFonts.boldAppFont(withTextStyle: .title2)
-        
+        self.title.attributedText = title
+                
         self.contentBackground.backgroundColor = UIColor.AppColors.cardColor
+        self.contentBackground.colors = [UIColor.AppColors.lightGreen,
+                                         UIColor.AppColors.blue]
         
         self.contentLabel.text = content
+        self.contentLabel.font = UIFont.AppFonts.appFont(withTextStyle: .footnote)
     }
 }

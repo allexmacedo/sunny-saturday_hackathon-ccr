@@ -8,29 +8,15 @@
 
 import Foundation
 
-enum FacilityCategory: String, CaseIterable, Codable {
+struct FacilityCategory: Codable {
     
-    case suport       = "Pontos de apoio"
-    case hotels       = "Hotéis"
-    case resting      = "Área de descanso"
-    case gas          = "Postos de gasolina"
-    case restaurants  = "Alimentação"
-    case repair       = "Mecânica"
-    case services     = "Postos de serviços"
-    case health       = "Saúde"
-    case help         = "Socorro"
-    case tireShop     = "Borracharia"
+    let id: Int?
+    let name: String?
+    let description: String?
     
     enum CodingKeys: String, CodingKey {
-        case suport
-        case hotels
-        case resting
-        case gas
-        case restaurants
-        case repair      
-        case services
-        case health
-        case help
-        case tireShop
+        case id          = "cat_id"
+        case name        = "cat_name"
+        case description = "cat_description"
     }
 }
