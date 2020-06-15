@@ -15,6 +15,7 @@ extension NumberFormatter {
         
         numberFormatter.numberStyle = .decimal
         numberFormatter.locale = Locale.current
+        numberFormatter.maximumFractionDigits = 1
         
         return numberFormatter
     }

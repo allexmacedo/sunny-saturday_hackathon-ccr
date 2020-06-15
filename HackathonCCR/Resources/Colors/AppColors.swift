@@ -12,5 +12,45 @@ extension UIColor {
     
     enum AppColors {
         
+        static var green: UIColor {
+            return UIColor(named: "Green") ?? .green
+        }
+        
+        static var lightGreen: UIColor {
+            return UIColor(named: "LightGreen") ?? .green
+        }
+        
+        static var blue: UIColor {
+            return UIColor(named: "Blue") ?? .blue
+        }
+        
+        static var cardColor: UIColor {
+            
+            if #available(iOS 13.0, *) {
+                return .tertiarySystemFill
+                
+            } else {
+                // Fallback on earlier versions
+                return .lightGray
+            }
+        }
+        
+        static var label: UIColor {
+            if #available(iOS 13.0, *) {
+                return .label
+            } else {
+                // Fallback on earlier versions
+                return .darkText
+            }
+        }
+        
+        static var secondaryLabel: UIColor {
+            if #available(iOS 13.0, *) {
+                return .secondaryLabel
+            } else {
+                // Fallback on earlier versions
+                return .darkGray
+            }
+        }
     }
 }

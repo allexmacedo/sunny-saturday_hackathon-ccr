@@ -42,11 +42,11 @@
             </objects>
             <point key="canvasLocation" x="1975" y="-265"/>
         </scene>
-        <!--Item-->
+        <!--Carteira-->
         <scene sceneID="GEG-vd-xZX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BTb-tv-LdM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="XrW-DS-IZT"/>
+                    <tabBarItem key="tabBarItem" title="Carteira" image="star_icon" selectedImage="star_icon_fill" id="XrW-DS-IZT"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cgn-lo-2Gb">
@@ -63,4 +63,12 @@
             <point key="canvasLocation" x="108.69565217391305" y="-264.50892857142856"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="Green"/>
+    <resources>
+        <image name="star_icon" width="24" height="24"/>
+        <image name="star_icon_fill" width="24" height="24"/>
+        <namedColor name="Green">
+            <color red="0.043000001460313797" green="0.65799999237060547" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
 </document>

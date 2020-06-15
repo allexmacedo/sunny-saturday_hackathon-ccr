@@ -7,44 +7,90 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Categorias-->
         <scene sceneID="RvN-Nb-m9Y">
             <objects>
-                <viewController id="yf7-hD-d2x" sceneMemberID="viewController">
+                <viewController id="yf7-hD-d2x" customClass="CategoriesViewController" customModule="HackathonCCRTests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RHF-sg-hjz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hDf-LJ-jhV">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <inset key="separatorInset" minX="28" minY="0.0" maxX="20" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pks-qV-CEy" firstAttribute="bottom" secondItem="hDf-LJ-jhV" secondAttribute="bottom" id="LcL-MC-DSy"/>
+                            <constraint firstItem="Pks-qV-CEy" firstAttribute="trailing" secondItem="hDf-LJ-jhV" secondAttribute="trailing" id="Myh-TK-X70"/>
+                            <constraint firstItem="hDf-LJ-jhV" firstAttribute="top" secondItem="Pks-qV-CEy" secondAttribute="top" id="eCA-gc-Zod"/>
+                            <constraint firstItem="hDf-LJ-jhV" firstAttribute="leading" secondItem="Pks-qV-CEy" secondAttribute="leading" id="en2-na-oeH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Pks-qV-CEy"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sWR-K3-JQS"/>
+                    <navigationItem key="navigationItem" title="Categorias" largeTitleDisplayMode="always" id="sWR-K3-JQS"/>
                     <connections>
-                        <segue destination="def-pJ-gcN" kind="show" identifier="FacilityInformation" id="97l-jP-Aie"/>
+                        <outlet property="tableView" destination="hDf-LJ-jhV" id="y5o-ml-7A9"/>
+                        <segue destination="7Tu-hc-fpF" kind="show" identifier="CommercialFacilities" id="Qp2-jY-tY9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Fr-5J-r8w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-26.086956521739133" y="154.6875"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Commercial Facility View Controller-->
+        <scene sceneID="p7i-NQ-qwS">
+            <objects>
+                <viewController id="7Tu-hc-fpF" customClass="CommercialFacilityViewController" customModule="HackathonCCRTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3IR-Ci-qx2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="CYg-A4-9DW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fZn-xT-Be1" firstAttribute="bottom" secondItem="CYg-A4-9DW" secondAttribute="bottom" id="4ds-ik-10w"/>
+                            <constraint firstItem="fZn-xT-Be1" firstAttribute="trailing" secondItem="CYg-A4-9DW" secondAttribute="trailing" id="7Il-hh-pO1"/>
+                            <constraint firstItem="CYg-A4-9DW" firstAttribute="top" secondItem="fZn-xT-Be1" secondAttribute="top" id="Ff5-MN-6IY"/>
+                            <constraint firstItem="CYg-A4-9DW" firstAttribute="leading" secondItem="fZn-xT-Be1" secondAttribute="leading" id="Knc-K7-47Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fZn-xT-Be1"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="vrc-BK-tnm"/>
+                    <connections>
+                        <outlet property="tableView" destination="CYg-A4-9DW" id="2Wn-B8-jxp"/>
+                        <segue destination="def-pJ-gcN" kind="show" identifier="FacilityInformation" id="kGp-bk-1oI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Guy-XT-Syn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="155"/>
+        </scene>
+        <!--Facility-->
         <scene sceneID="0Og-By-3ER">
             <objects>
-                <viewControllerPlaceholder id="def-pJ-gcN" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Facility" id="def-pJ-gcN" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="1ef-pE-0vP"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wl3-i4-66d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808" y="155"/>
+            <point key="canvasLocation" x="1553" y="155"/>
         </scene>
-        <!--Item-->
+        <!--Categorias-->
         <scene sceneID="ZMY-yc-AYP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rz4-uC-CBF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="tlW-7J-YFf"/>
+                    <tabBarItem key="tabBarItem" title="Categorias" image="categories_empty" selectedImage="categories" id="tlW-7J-YFf"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yQk-mO-ptI">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="yQk-mO-ptI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -57,4 +103,12 @@
             <point key="canvasLocation" x="-936.23188405797111" y="154.6875"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="Green"/>
+    <resources>
+        <image name="categories" width="24" height="24"/>
+        <image name="categories_empty" width="24" height="24"/>
+        <namedColor name="Green">
+            <color red="0.043000001460313797" green="0.65799999237060547" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
 </document>
