@@ -1,0 +1,15 @@
+version: '3'
+
+
+services:
+
+    postgres-ccr:
+        image: postgres
+        ports: 
+            - "5432:5432"
+        environment: 
+            POSTGRES_USER: adminUser
+            POSTGRES_PASSWORD: Js!HMdu7
+            POSTGRES_DB: db_satursun
+        volumes:
+            - ./.docker/postgres:/data/postgres
