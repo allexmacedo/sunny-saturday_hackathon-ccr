@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dDf-3P-RYV">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="104" width="414" height="742"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="po1-q7-xbC">
                                     <size key="itemSize" width="128" height="128"/>
@@ -29,10 +29,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="dDf-3P-RYV" firstAttribute="top" secondItem="HYK-SW-CAK" secondAttribute="top" id="e4p-Qj-4HS"/>
+                            <constraint firstItem="dDf-3P-RYV" firstAttribute="top" secondItem="HYK-SW-CAK" secondAttribute="top" constant="16" id="VoM-wV-zdz"/>
                             <constraint firstItem="HYK-SW-CAK" firstAttribute="trailing" secondItem="dDf-3P-RYV" secondAttribute="trailing" id="g9M-KC-nVq"/>
                             <constraint firstItem="dDf-3P-RYV" firstAttribute="leading" secondItem="HYK-SW-CAK" secondAttribute="leading" id="iWy-HP-LLI"/>
-                            <constraint firstAttribute="bottom" secondItem="dDf-3P-RYV" secondAttribute="bottom" id="zJG-TI-rtt"/>
+                            <constraint firstItem="HYK-SW-CAK" firstAttribute="bottom" secondItem="dDf-3P-RYV" secondAttribute="bottom" constant="16" id="meW-y3-iKa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HYK-SW-CAK"/>
                     </view>
@@ -64,4 +64,10 @@
             <point key="canvasLocation" x="-452" y="64"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="Green"/>
+    <resources>
+        <namedColor name="Green">
+            <color red="0.043000001460313797" green="0.65799999237060547" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
 </document>

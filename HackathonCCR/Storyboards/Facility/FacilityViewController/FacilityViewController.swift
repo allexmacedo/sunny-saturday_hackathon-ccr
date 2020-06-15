@@ -25,6 +25,13 @@ class FacilityViewController: UIViewController {
         self.title = facility?.name
         
         configureCollectionView()
+        
+        if let navigation = self.navigationController, navigation.viewControllers.first == self {
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(handleClose))
+        }
     }
     
+    @IBAction func handleClose(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

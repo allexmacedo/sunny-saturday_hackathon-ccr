@@ -28,7 +28,7 @@ struct CommercialFacility: Decodable {
     
     let rating: Double
     
-    let coordinate: CLLocation
+    let location: CLLocation
     
     let verified: Bool
     
@@ -56,7 +56,7 @@ struct CommercialFacility: Decodable {
         self.name = name
         self.category = category
         self.rating = rating
-        self.coordinate = coordinate
+        self.location = coordinate
         self.verified = verified
         self.address = address
         self.timeOfWork = timeOfWork

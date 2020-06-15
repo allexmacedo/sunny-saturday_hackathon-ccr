@@ -12,10 +12,26 @@ extension MapViewController: MKMapViewDelegate {
     func configureMapView() {
         mapView.delegate = self
         
-        centerMapOnUserLocation()
+        loadContent()
     }
     
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard annotation as? CommercialFacilityAnnotation  != nil else {return nil}
+        
+        var view: MKAnnotationView?
+    
+        view = mapView.dequeueReusableAnnotationView(withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        if let markerView = view as? MKMarkerAnnotationView {
+       
+            markerView.markerTintColor = UIColor.AppColors.green
+        }
+        
+        return view
+    }
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        self.performSegue(withIdentifier: Segues.annotationInformations.rawValue, sender: nil)
+        
+        if let annotation = view.annotation as? CommercialFacilityAnnotation {
+            self.performSegue(withIdentifier: Segues.annotationInformations.rawValue, sender: annotation)
+        }
     }
 }

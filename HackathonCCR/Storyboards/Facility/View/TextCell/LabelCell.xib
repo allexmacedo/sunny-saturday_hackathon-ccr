@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Guv-rH-Wmr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="171"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s03-I1-q1W">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s03-I1-q1W">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="171"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
@@ -31,6 +31,7 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="414" id="5QQ-Aa-sT4"/>
                             <constraint firstAttribute="bottom" secondItem="s03-I1-q1W" secondAttribute="bottom" id="AVE-4Z-6gA"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" priority="999" constant="100" id="Kgq-7O-IsT"/>
                             <constraint firstItem="s03-I1-q1W" firstAttribute="top" secondItem="Guv-rH-Wmr" secondAttribute="top" id="N4Y-Ii-P4E"/>
                             <constraint firstItem="s03-I1-q1W" firstAttribute="leading" secondItem="Guv-rH-Wmr" secondAttribute="leading" id="eAn-Oo-399"/>
                             <constraint firstAttribute="trailing" secondItem="s03-I1-q1W" secondAttribute="trailing" id="z0E-bi-yna"/>

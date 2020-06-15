@@ -38,7 +38,7 @@ extension CommercialFacilityViewController: UITableViewDataSource {
             
             let rating: String? = NumberFormatter.localizedDecimalString(from: item.rating)
             
-            let distance = userLocation?.distance(from: item.coordinate)
+            let distance = userLocation?.distance(from: item.location)
             
             var distanceLabel: String?
             

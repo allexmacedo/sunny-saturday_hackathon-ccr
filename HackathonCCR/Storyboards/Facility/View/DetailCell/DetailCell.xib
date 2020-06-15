@@ -103,7 +103,7 @@
                             <constraint firstItem="uHY-NV-PFL" firstAttribute="centerY" secondItem="SIr-p6-223" secondAttribute="centerY" id="EVV-YK-by3"/>
                             <constraint firstItem="SIr-p6-223" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uHY-NV-PFL" secondAttribute="trailing" id="GDf-GF-urP"/>
                             <constraint firstAttribute="trailing" secondItem="SIr-p6-223" secondAttribute="trailing" constant="16" id="HZC-lP-2XV"/>
-                            <constraint firstAttribute="bottom" secondItem="uHY-NV-PFL" secondAttribute="bottom" constant="16" id="PU2-Sh-DrS"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uHY-NV-PFL" secondAttribute="bottom" constant="16" id="PU2-Sh-DrS"/>
                             <constraint firstItem="SIr-p6-223" firstAttribute="top" secondItem="2xs-Bq-Yyd" secondAttribute="bottom" constant="16" id="PeJ-ge-GDo"/>
                             <constraint firstItem="2xs-Bq-Yyd" firstAttribute="centerY" secondItem="CXp-Pm-auj" secondAttribute="top" id="acM-2P-0GB"/>
                             <constraint firstItem="uHY-NV-PFL" firstAttribute="leading" secondItem="CXp-Pm-auj" secondAttribute="leading" constant="16" id="iEH-Jb-Oc4"/>
@@ -137,7 +137,7 @@
         <image name="check" width="16" height="10"/>
         <image name="star" width="14" height="14"/>
         <namedColor name="Green">
-            <color red="0.14499999582767487" green="0.82700002193450928" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.043000001460313797" green="0.65799999237060547" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
